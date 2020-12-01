@@ -1,6 +1,8 @@
 import React from 'react'
 import SkillBar from '../../components/SkillBar'
 import Hero from '../../components/Hero'
+import ProjectCard from '../../components/ProjectCard'
+import projects from '../../projects.json'
 import './index.css'
 
 export default function Home() {
@@ -25,7 +27,7 @@ export default function Home() {
                 <div className='portfolio-section'>
                     <h2 className='section-header white-text'>Projects</h2>
                     <div className='portfolios-container'>
-
+                        {projects.map(project => <ProjectCard projectInfo={project} />)}
                     </div>
                 </div>
             </div>

@@ -6,7 +6,6 @@ export default function SkillBar(props) {
 
     // when percent changes (and on load), increment percent for counting animation
     useEffect(() => {
-        console.log(percent)
         // if percent has not reached the specified percent, increment
         if (percent != props.percent) {
             setTimeout(() => {

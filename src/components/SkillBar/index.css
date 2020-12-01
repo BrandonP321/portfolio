@@ -3,14 +3,16 @@
 }
 
 .skill-bar {
-    border: 2px solid black;
-    height: 15px;
+    /* border: 2px solid black; */
+    height: 10px;
     border-radius: 7px;
 }
 
 .skill-bar-fill {
     background-color: black;
     height: 100%;
+    border-top-left-radius: 3.5px;
+    border-bottom-left-radius: 3.5px;
 }
 
 .skill-percent {

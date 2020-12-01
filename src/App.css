@@ -1,0 +1,23 @@
+body {
+    background-color: #161616;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.gray-text {
+    color: #727272;
+}
+
+.red-text {
+    color: #cf0010
+}
+
+.red-bg {
+    background-color: #cf0010;
+}
+
+.white-bg {
+    background-color: #fff;
+}

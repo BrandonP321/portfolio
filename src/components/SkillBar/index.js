@@ -22,9 +22,9 @@ export default function SkillBar(props) {
 
     return (
         <div className='skill'>
-            <p className='skill-text'>{props.skill}<span className='skill-percent'>{percent}%</span></p>
-            <div className='skill-bar'>
-                <div className='skill-bar-fill' style={styles}></div>
+            <p className='skill-text white-text'>{props.skill}<span className='skill-percent'>{percent}%</span></p>
+            <div className='skill-bar white-bg'>
+                <div className='skill-bar-fill red-bg' style={styles}></div>
             </div>
         </div>
     )

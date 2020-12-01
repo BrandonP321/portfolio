@@ -7,7 +7,7 @@ export default function Home() {
         <>
             <div className='home-content'>
                 <div className='skills-section'>
-                    <h2 className='section-header'>Skills</h2>
+                    <h2 className='section-header white-text'>Skills</h2>
                     <div className='skills-flex-container'>
                         <SkillBar skill="HTML & CSS" percent='90' />
                         <SkillBar skill='JavaScript & jQuery' percent='90' />

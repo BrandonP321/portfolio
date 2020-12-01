@@ -1,10 +1,12 @@
 import React from 'react'
 import SkillBar from '../../components/SkillBar'
+import Hero from '../../components/Hero'
 import './index.css'
 
 export default function Home() {
     return (
         <>
+            <Hero />
             <div className='home-content'>
                 <div className='skills-section'>
                     <h2 className='section-header white-text'>Skills</h2>
@@ -21,7 +23,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className='portfolio-section'>
-                    <h2>Projects</h2>
+                    <h2 className='section-header white-text'>Projects</h2>
                     <div className='portfolios-container'>
 
                     </div>

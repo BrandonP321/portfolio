@@ -1,5 +1,6 @@
 .skill {
     width: 30%;
+    margin-bottom: 2%;
 }
 
 .skill-bar {
@@ -22,4 +23,12 @@
 .skill-text {
     padding: 0 5px 0 5px;
     margin-bottom: 3px;
+}
+
+@media screen and (max-width: 950px) {
+    .skill {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

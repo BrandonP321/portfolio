@@ -1,0 +1,34 @@
+.skill {
+    width: 30%;
+    margin-bottom: 2%;
+}
+
+.skill-bar {
+    /* border: 2px solid black; */
+    height: 10px;
+    border-radius: 7px;
+}
+
+.skill-bar-fill {
+    background-color: black;
+    height: 100%;
+    border-top-left-radius: 3.5px;
+    border-bottom-left-radius: 3.5px;
+}
+
+.skill-percent {
+    float: right;
+}
+
+.skill-text {
+    padding: 0 5px 0 5px;
+    margin-bottom: 3px;
+}
+
+@media screen and (max-width: 950px) {
+    .skill {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,64 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header-logo {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    font-size: 2rem;
+}
+
+.navbar-spacer {
+    width: 1px;
+    height: 25vh;
+    margin: 0 auto;
+}
+
+.nav-icon {
+    color: white;
+    font-size: 1.5rem;
+    z-index: 20;
+    transition: color .5s, opacity .5s;
+}
+
+.nav-item-link:hover .nav-icon {
+    color: #cf0010;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.nav-item-link:hover .nav-item-text {
+    opacity: 1;
+}
+
+.nav-item-container {
+    text-align: center;
+}
+
+.nav-item-link {
+    position: relative;
+}
+
+.nav-item-text {
+    display: block;
+    position: absolute;
+    top: -10px;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity .5s;
+    width: 53px;
+}
+
+.vertical-nav-bar {
+    position: relative;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 20px - 2rem - 5vh);
+    top: calc(40px + 2rem);
+    width: 53px;
+}

@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Apple",
+        "image": "./assets/images/apple-test-capture.png",
+        "alt_text": "this is a placeholder image",
+        "site_url": "#",
+        "github_repo_url": "#",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nisi nihil itaque rem saepe consectetur debitis laborum expedita iste architecto nobis ullam quo, dolores neque adipisci consequuntur quae! Ab, nihil.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nisi nihil itaque rem saepe consectetur debitis laborum expedita iste architecto nobis ullam quo, dolores neque adipisci consequuntur quae! Ab, nihil."
+    },
+    {
+        "name": "Apple",
+        "image": "./assets/images/apple-test-capture.png",
+        "alt_text": "this is a placeholder image",
+        "site_url": "#",
+        "github_repo_url": "#",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nisi nihil itaque rem saepe consectetur debitis laborum expedita iste architecto nobis ullam quo, dolores neque adipisci consequuntur quae! Ab, nihil."
+    },
+    {
+        "name": "Apple",
+        "image": "./assets/images/apple-test-capture.png",
+        "alt_text": "this is a placeholder image",
+        "site_url": "#",
+        "github_repo_url": "#",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nisi nihil itaque rem saepe consectetur debitis laborum expedita iste architecto nobis ullam quo, dolores neque adipisci consequuntur quae! Ab, nihil."
+    },
+    {
+        "name": "Apple",
+        "image": "./assets/images/apple-test-capture.png",
+        "alt_text": "this is a placeholder image",
+        "site_url": "#",
+        "github_repo_url": "#",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nisi nihil itaque rem saepe consectetur debitis laborum expedita iste architecto nobis ullam quo, dolores neque adipisci consequuntur quae! Ab, nihil."
+    }
+]

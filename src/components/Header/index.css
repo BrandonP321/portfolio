@@ -1,0 +1,40 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header-logo {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    font-size: 2rem;
+}
+
+.navbar-spacer {
+    width: 3px;
+    height: 20vh;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.nav-icon {
+    color: white;
+    font-size: 2rem;
+    transition: color .25s;
+}
+
+.nav-icon:hover {
+    color: #cf0010;
+    cursor: pointer;
+}
+
+.vertical-nav-bar {
+    position: relative;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 20px - 2rem - 5vh);
+    top: calc(40px + 2rem);
+}

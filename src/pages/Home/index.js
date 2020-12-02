@@ -12,7 +12,7 @@ export default function Home() {
         <>
             <Hero />
             <div className='home-content'>
-                <div className='skills-section'>
+                <div className='skills-section' id='skills'>
                     <h2 className='section-header white-text'>Skills</h2>
                     <div className='skills-flex-container'>
                         <SkillBar skill="HTML & CSS" percent='90' />
@@ -26,7 +26,7 @@ export default function Home() {
                         <SkillBar skill='Problem Solving' percent='90' />
                     </div>
                 </div>
-                <div className='portfolio-section'>
+                <div className='portfolio-section' id='projects'>
                     <h2 className='section-header white-text'>Projects</h2>
                     <div className='portfolios-container'>
                         {projects.map(project => <ProjectCard projectInfo={project} />)}

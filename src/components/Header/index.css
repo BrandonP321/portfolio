@@ -12,14 +12,14 @@ header {
 }
 
 .navbar-spacer {
-    width: 3px;
-    height: 20vh;
+    width: 1px;
+    height: 25vh;
     margin: 0 auto;
 }
 
 .nav-icon {
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     z-index: 20;
     transition: color .5s, opacity .5s;
 }
@@ -49,6 +49,7 @@ header {
     opacity: 0;
     z-index: 1;
     transition: opacity .5s;
+    width: 53px;
 }
 
 .vertical-nav-bar {
@@ -59,4 +60,5 @@ header {
     justify-content: space-between;
     height: calc(100vh - 20px - 2rem - 5vh);
     top: calc(40px + 2rem);
+    width: 53px;
 }

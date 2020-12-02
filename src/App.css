@@ -1,0 +1,33 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #161616;
+    font-family: "Gilroy Light";
+    /* letter-spacing: .25rem; */
+}
+
+.white-text {
+    color: #fff;
+}
+
+.gray-text {
+    color: #727272;
+}
+
+.red-text {
+    color: #cf0010
+}
+
+.red-bg {
+    background-color: #cf0010;
+}
+
+.white-bg {
+    background-color: #fff;
+}
+
+.gray-bg {
+    background-color: #727272;
+}

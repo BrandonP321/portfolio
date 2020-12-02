@@ -1,0 +1,28 @@
+.project-btn {
+    display: inline-block;
+    position: relative;
+    padding: 1% 7%;
+    border-radius: 5px;
+}
+
+.project-container {
+    height: 530px;
+}
+
+.project-img-container {
+    width: 60%;
+}
+
+.project-brief-container {
+    position: relative;
+    left: 40%;
+    bottom: 200px;
+    width: 60%;
+    background-color: #161616;
+    padding: 2%;
+    box-shadow: 0px 4px 16px black;
+}
+
+.project-title {
+
+}

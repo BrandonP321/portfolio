@@ -14,19 +14,41 @@ header {
 .navbar-spacer {
     width: 3px;
     height: 20vh;
-    background-color: white;
     margin: 0 auto;
 }
 
 .nav-icon {
     color: white;
     font-size: 2rem;
-    transition: color .25s;
+    z-index: 20;
+    transition: color .5s, opacity .5s;
 }
 
-.nav-icon:hover {
+.nav-item-link:hover .nav-icon {
     color: #cf0010;
     cursor: pointer;
+    opacity: 0;
+}
+
+.nav-item-link:hover .nav-item-text {
+    opacity: 1;
+}
+
+.nav-item-container {
+    text-align: center;
+}
+
+.nav-item-link {
+    position: relative;
+}
+
+.nav-item-text {
+    display: block;
+    position: absolute;
+    top: -10px;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity .5s;
 }
 
 .vertical-nav-bar {

@@ -1,12 +1,30 @@
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
 footer {
     /* background-color: black; */
+    padding-top: 2%;
     padding-bottom: 2%;
+    box-shadow: 0px 4px 16px black;
+    margin-top: 70px;
+}
+
+.footer-column {
+    /* margin: 0 auto; */
+    /* background-color: salmon; */
 }
 
 .footer-flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 1152px;
+    margin: 0 auto;
+}
+
+.footer-header {
 }
 
 .footer-line {
@@ -14,6 +32,23 @@ footer {
     margin: 3% auto;
     height: 3px;
     background-color: white;
+}
+
+.footer-logo {
+    font-size: 3.5rem;
+    font-family: "Gilroy Extra Bold"
+}
+
+.footer-logo-container {
+
+}
+
+.footer-logo-subtext {
+
+}
+
+.footer-site-link {
+    
 }
 
 .footer-socials-container {
@@ -42,9 +77,6 @@ footer {
     cursor: pointer;
 }
 
-/* .social-circle:hover {
-} */
-
 .social-icon {
     position: relative;
     top: calc((100% - 1.5rem) / 2);
@@ -52,4 +84,23 @@ footer {
     font-size: 1.5rem;
     margin: 0 auto;
     transition: color .25s;
+}
+
+
+@media screen and (max-width: 1213px) {
+    .footer-flex {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .footer-column {
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 7%;
+    }
+
+    .footer-flex {
+        flex-direction: column;
+    }
 }

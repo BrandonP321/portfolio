@@ -31,7 +31,24 @@ export default function Header() {
                         <p className='nav-item-text red-text'>Projects</p>
                     </a>
                 </div>
+                <div className='nav-item-container'>
+                    <a className='nav-item-link' href='#contact'>
+                        <i class="fas fa-envelope nav-icon"></i>
+                        <p className='nav-item-text red-text'>Contact</p>
+                    </a>
+                </div>
                 <div className='navbar-spacer gray-bg'></div>
+                <div className='nav-socials'>
+                    <a href='https://www.linkedin.com/in/brandon-phillips-2554801a1/' target='_blank'>
+                        <i class="fab fa-linkedin-in nav-social-icon"></i>
+                    </a>
+                    <a href='https://github.com/BrandonP321' target='_blank'>
+                        <i class="fab fa-github-alt nav-social-icon"></i>
+                    </a>
+                    <a href='https://stackoverflow.com/users/13790075/brandonp321' target='_blank'>
+                        <i class="fab fa-stack-overflow nav-social-icon"></i>
+                    </a>
+                </div>
             </div>
         </header>
     )

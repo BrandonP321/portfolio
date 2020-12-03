@@ -13,7 +13,7 @@ header {
 
 .navbar-spacer {
     width: 1px;
-    height: 25vh;
+    height: 17vh;
     margin: 0 auto;
 }
 
@@ -50,6 +50,25 @@ header {
     z-index: 1;
     transition: opacity .5s;
     width: 53px;
+}
+
+.nav-social-icon {
+    color: white;
+    font-size: 1.3rem;
+    transition: color .25s;
+}
+
+.nav-social-icon:hover {
+    color: #cf0010;
+}
+
+.nav-socials {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    /* background-color: salmon; */
+    height: 13vh;
 }
 
 .vertical-nav-bar {

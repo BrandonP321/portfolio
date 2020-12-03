@@ -32,7 +32,7 @@ export default function Home() {
                         {projects.map(project => <ProjectCard projectInfo={project} />)}
                     </div>
                 </div>
-                <div className='contact-section'>
+                <div className='contact-section' id='contact'>
                     <h2 className='section-header white-text'>Contact Me</h2>
                     <form className='contact-form'>
                         <div className='contact-fields-flex'>

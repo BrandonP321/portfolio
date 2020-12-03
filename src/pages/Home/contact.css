@@ -10,20 +10,23 @@
     font-size: 1.5rem;
     width: 100%;
     background-color: #161616;
-    /* border-style: ; */
-    border-color: black;
-    border-width: 5px;
+    border: none;
+    border-bottom: 1px solid #727272;
     color: white;
     padding: .5%;
 }
 
+.contact-input:focus {
+    outline: none;
+    border-color: #cf0010;
+}
+
 .input-container {
     margin-bottom: 2px;
-    /* border: 5px solid black; */
 }
 
 .name-input-container, .email-input-container {
-    width: calc(50% - 2px);
+    width: calc(50% - 10px);
 }
 
 .send-btn {

@@ -45,7 +45,7 @@ header {
 .nav-item-text {
     display: block;
     position: absolute;
-    top: -10px;
+    top: -5px;
     opacity: 0;
     z-index: 1;
     transition: opacity .5s;

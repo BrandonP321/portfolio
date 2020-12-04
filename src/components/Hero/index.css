@@ -3,3 +3,18 @@
     height: auto;
     margin-bottom: 2%;
 }
+
+
+.hero-text-container {
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
+
+.hero-title {
+    /* font-family: 'Gilroy Extra Bold'; */
+    font-size: 6vw;
+    line-height: 5rem;
+
+}

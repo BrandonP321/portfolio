@@ -27,14 +27,17 @@ import './index.css'
 export default class ProjectCard extends React.Component {
     constructor(props) {
         super(props)
-        const { image, name, description } = props.projectInfo
+        const { image, name, description, alt_text, site_url, github_repo_url } = props.projectInfo
         this.image = image
         this.name = name
         this.description = description
+        this.alt_text = alt_text
+        this.site_url = site_url
+        this.github_repo_url = github_repo_url
+        // index of project in json data file
+        this.projectIndex = props.index
+        // space in pixels in between each project card
         this.extraSpace = 50
-        // reference to container containing description of project
-        this.projectDesc = React.createRef()
-        this.imageNode = React.createRef()
     }
 
     state = {
@@ -44,13 +47,17 @@ export default class ProjectCard extends React.Component {
 
     render() {
         return (
-            <div className='project-container' style={{ height: window.innerWidth > 1213 ? `${this.state.projectCardHeight + this.state.projectImageHeight - 200 + window.innerWidth * .02 + this.extraSpace}px`: window.innerWidth > 727 ? `${this.state.projectCardHeight + this.state.projectImageHeight - (((486 - (1213 - window.innerWidth)) / 486 * 200)) + window.innerWidth * .02 + this.extraSpace}px`: `${this.state.projectImageHeight + this.state.projectCardHeight + window.innerWidth * .02 + this.extraSpace}px`}}>
+            <div className='project-container' style={{ height: window.innerWidth > 1213 ?
+                // depending on width of viewport, adjust height of whole project section for a fluid responsive site
+                `${this.state.projectCardHeight + this.state.projectImageHeight - 200 + window.innerWidth * .02 + this.extraSpace}px`:
+                window.innerWidth > 727 ?
+                `${this.state.projectCardHeight + this.state.projectImageHeight - (((486 - (1213 - window.innerWidth)) / 486 * 200)) + window.innerWidth * .02 + this.extraSpace}px`:
+                `${this.state.projectImageHeight + this.state.projectCardHeight + window.innerWidth * .02 + this.extraSpace}px`}}>
                 <Measure
                     onResize={(contentRect) => {
+                        // when img changes size, update height in state
                         if (contentRect.entry) {
                             this.setState({ projectImageHeight: contentRect.entry.height })
-                            console.log(this.state.projectCardHeight + this.state.projectImageHeight - ((486 - (1213 - window.innerWidth) / 486 * 200)) + (window.innerWidth * .02))
-                            this.setState({ projectImageTop: contentRect.entry.top})
                         }
                     }}
                 >
@@ -64,8 +71,9 @@ export default class ProjectCard extends React.Component {
                 </Measure>
                 <Measure
                     onResize={(contentRect) => {
+                        // when project description box changes size, update box height in state
                         if (contentRect.entry) {
-                            this.setState({ projectCardHeight: contentRect.entry.height + window.innerWidth * .02})
+                            this.setState({ projectCardHeight: contentRect.entry.height + window.innerWidth * .02 })
                         }
                     }}
                 >
@@ -75,25 +83,13 @@ export default class ProjectCard extends React.Component {
                                 <h3 className='project-title white-text'>{this.name}</h3>
                                 <p className='project-desc gray-text'>{this.description}</p>
                                 <div className='project-btns'>
-                                    <a className='project-btn-link' href='#'><div className='project-btn red-bg white-text'>Button</div></a>
+                                    <a className='project-btn-link' href={`/project/${this.projectIndex}`}><div className='project-btn red-bg white-text'>More Info</div></a>
                                 </div>
                             </div>
                         )
                     }}
                 </Measure>
             </div>
-            // <div className='project-container'>
-            //     <div className='project-img-container'>
-            //         <img className='img-fluid project-img' src={this.image} alt={this.alt_text} />
-            //     </div>
-            //     <div className='project-brief-container' ref={this.projectDesc}>
-            //         <h3 className='project-title white-text'>{this.name}</h3>
-            //         <p className='project-desc gray-text'>{this.description}</p>
-            //         <div className='project-btns'>
-            //             <a className='project-btn-link' href='#'><div className='project-btn red-bg white-text'>Button</div></a>
-            //         </div>
-            //     </div>
-            // </div>
         )
     }
 }

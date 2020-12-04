@@ -1,5 +1,4 @@
 import React from 'react'
-import Footer from '../../components/Footer'
 import Hero from '../../components/Hero'
 import ProjectCard from '../../components/ProjectCard'
 import projects from '../../projects.json'
@@ -8,7 +7,6 @@ import './index.css'
 import './contact.css'
 
 export default function Home() {
-    let projectId = 0
 
     return (
         <>
@@ -32,8 +30,7 @@ export default function Home() {
                     <h2 className='section-header white-text'>Projects</h2>
                     <div className='portfolios-container'>
                         {projects.map(project => {
-                            projectId++
-                            return <ProjectCard projectInfo={project} id={projectId} />
+                            return <ProjectCard projectInfo={project} index={projects.indexOf(project)} />
                         }
                         )}
                     </div>
@@ -59,7 +56,6 @@ export default function Home() {
                     </form>
                 </div>
             </div>
-            <Footer />
         </>
     )
 }

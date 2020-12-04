@@ -8,7 +8,6 @@ import './index.css'
 import './contact.css'
 
 export default function Home() {
-    let projectId = 0
 
     return (
         <>
@@ -32,8 +31,7 @@ export default function Home() {
                     <h2 className='section-header white-text'>Projects</h2>
                     <div className='portfolios-container'>
                         {projects.map(project => {
-                            projectId++
-                            return <ProjectCard projectInfo={project} id={projectId} />
+                            return <ProjectCard projectInfo={project} index={projects.indexOf(project)} />
                         }
                         )}
                     </div>

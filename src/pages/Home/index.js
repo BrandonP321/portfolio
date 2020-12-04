@@ -8,13 +8,15 @@ import './index.css'
 import './contact.css'
 
 export default function Home() {
+    let projectId = 0
+
     return (
         <>
             <Hero />
             <div className='home-content'>
                 <div className='skills-section' id='skills'>
                     <h2 className='section-header white-text'>Skills</h2>
-                    <div className='skills-flex-container'>
+                    {/* <div className='skills-flex-container'>
                         <SkillBar skill="HTML & CSS" percent='90' />
                         <SkillBar skill='JavaScript & jQuery' percent='90' />
                         <SkillBar skill='MySQL & NoSQL' percent='85' />
@@ -24,15 +26,19 @@ export default function Home() {
                         <SkillBar skill='Photoshop / Illustrator / inDesign' percent='70' />
                         <SkillBar skill='Leadership' percent='75' />
                         <SkillBar skill='Problem Solving' percent='90' />
-                    </div>
+                    </div> */}
                 </div>
                 <div className='portfolio-section' id='projects'>
                     <h2 className='section-header white-text'>Projects</h2>
                     <div className='portfolios-container'>
-                        {projects.map(project => <ProjectCard projectInfo={project} />)}
+                        {projects.map(project => {
+                            projectId++
+                            return <ProjectCard projectInfo={project} id={projectId} />
+                        }
+                        )}
                     </div>
                 </div>
-                <div className='contact-section'>
+                <div className='contact-section' id='contact'>
                     <h2 className='section-header white-text'>Contact Me</h2>
                     <form className='contact-form'>
                         <div className='contact-fields-flex'>

@@ -1,5 +1,4 @@
 import React from 'react'
-import Footer from '../../components/Footer'
 import Hero from '../../components/Hero'
 import ProjectCard from '../../components/ProjectCard'
 import projects from '../../projects.json'
@@ -57,7 +56,6 @@ export default function Home() {
                     </form>
                 </div>
             </div>
-            <Footer />
         </>
     )
 }

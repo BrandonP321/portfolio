@@ -13,10 +13,21 @@
     font-size: 2.5rem;
 }
 
-.skills-flex-container {
+.skill-container {
+    width: 33%;
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.skill-icon {
+    font-size: 5rem;
+}
+
+.skills-flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    color: #727272;
 }
 
 @media screen and (max-width: 1212px) {

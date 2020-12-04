@@ -2,7 +2,6 @@ import React from 'react'
 import Hero from '../../components/Hero'
 import ProjectCard from '../../components/ProjectCard'
 import projects from '../../projects.json'
-import SkillBar from '../../components/SkillBar'
 import './index.css'
 import './contact.css'
 
@@ -11,21 +10,36 @@ export default function Home() {
     return (
         <>
             <Hero />
-            <div className='home-content'>
-                <div className='skills-section' id='skills'>
-                    <h2 className='section-header white-text'>Skills</h2>
-                    {/* <div className='skills-flex-container'>
-                        <SkillBar skill="HTML & CSS" percent='90' />
-                        <SkillBar skill='JavaScript & jQuery' percent='90' />
-                        <SkillBar skill='MySQL & NoSQL' percent='85' />
-                        <SkillBar skill='React' percent='85' />
-                        <SkillBar skill='Express.js' percent='85' />
-                        <SkillBar skill='Node.js' percent='90' />
-                        <SkillBar skill='Photoshop / Illustrator / inDesign' percent='70' />
-                        <SkillBar skill='Leadership' percent='75' />
-                        <SkillBar skill='Problem Solving' percent='90' />
-                    </div> */}
+            <div className='skills-section' id='skills'>
+                <h2 className='section-header white-text'>Skills</h2>
+                <div className='skills-flex'>
+                    <div className='skill-container'>
+                        <i class="fab fa-html5 skill-icon"></i>
+                        <p className='skill-text'>HTML</p>
+                    </div>
+                    <div className='skill-container'>
+                        <i class="fab fa-css3-alt skill-icon"></i>
+                        <p className='skill-text'>CSS</p>
+                    </div>
+                    <div className='skill-container'>
+                        <i class="fab fa-js-square skill-icon"></i>
+                        <p className='skill-text'>JavaScript</p>
+                    </div>
+                    <div className='skill-container'>
+                        <i class="fab fa-react skill-icon"></i>
+                        <p className='skill-text'>React</p>
+                    </div>
+                    <div className='skill-container'>
+                        <i class="fas fa-database skill-icon"></i>
+                        <p className='skill-text'>MySQL & NoSQL</p>
+                    </div>
+                    <div className='skill-container'>
+                        <i class="fab fa-node skill-icon"></i>
+                        <p className='skill-text'>Node.js</p>
+                    </div>
                 </div>
+            </div>
+            <div className='home-content'>
                 <div className='portfolio-section' id='projects'>
                     <h2 className='section-header white-text'>Projects</h2>
                     <div className='portfolios-container'>

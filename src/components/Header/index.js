@@ -26,7 +26,7 @@ export default function Header() {
                     </a>
                 <div className='navbar-spacer gray-bg'></div>
             </div>
-            <p className='header-copyright gray-text'>&#169;Brandon 2020</p>
+            <p className='header-copyright gray-text'>&#169; Brandon 2020</p>
         </header>
     )
 }

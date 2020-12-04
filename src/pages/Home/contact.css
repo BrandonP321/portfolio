@@ -14,6 +14,7 @@
     border-bottom: 1px solid #727272;
     color: white;
     padding: .5%;
+    margin-bottom: 20px;
 }
 
 .contact-input:focus {
@@ -23,6 +24,10 @@
 
 .input-container {
     margin-bottom: 2px;
+}
+
+.message-textarea {
+    margin-bottom: auto;
 }
 
 .name-input-container, .email-input-container {
@@ -37,4 +42,10 @@
 
 .subject-input-container, .message-textarea-container {
     width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .name-input-container, .email-input-container {
+        width: 100%;
+    }
 }

@@ -37,7 +37,7 @@ export default class ProjectCard extends React.Component {
         // index of project in json data file
         this.projectIndex = props.index
         // space in pixels in between each project card
-        this.extraSpace = 50
+        this.extraSpace = 70
     }
 
     state = {

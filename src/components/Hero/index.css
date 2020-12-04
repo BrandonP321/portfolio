@@ -6,7 +6,7 @@
 
 
 .hero-text-container {
-    width: 25%;
+    width: 410px;
     position: absolute;
     top: 50%;
     left: 20%;
@@ -14,7 +14,7 @@
 
 .hero-title {
     /* font-family: 'Gilroy Extra Bold'; */
-    font-size: 6vw;
+    font-size: 100px;
     line-height: 5rem;
 
 }

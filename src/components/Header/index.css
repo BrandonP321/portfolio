@@ -39,6 +39,8 @@ header {
 
 .header-mobile-icon-wrapper {
     display: none;
+    color: #727272;
+    font-size: 30px;
 }
 
 .header-nav {
@@ -49,112 +51,81 @@ header {
 
 .nav-link {
     font-size: 18px;
+    display: inline-block;
 }
 
-/* header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 100;
-    overflow-x: hidden
-}
-
-.header-copyright {
-    position: absolute;
-    bottom: 10px;
-    left: 30px;
-    width: 10vw;
-}
-
-.header-logo {
-    position: absolute;
-    top: 10px;
-    left: 32px;
-    font-size: 2rem;
-}
-
-.horizontal-nav-bar {
-    position: absolute;
-    top: 16px;
-    left: 25vw;
-    width: 35vw;
-    display: flex;
-    justify-content: space-between;
-}
-
-.menu-icon {
-    color: #727272;
-    font-size: 2rem;
-    transition: color .15s;
-}
-
-.menu-icon:hover {
-    cursor: pointer;
-    color: #cf0010;
-}
-
-.nav-link {
-    transition: color .15s;
-}
-
-.nav-link:hover {
-    color: #cf0010;
-}
-
-.navbar-spacer {
-    width: 1px;
-    height: 30vh;
-    margin: 0 auto;
-}
-
-.nav-social-icon {
-    color: white;
-    font-size: 1.3rem;
-    transition: color .25s;
-}
-
-.nav-social-icon:hover {
-    color: #cf0010;
-}
-
-.nav-socials {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-between; */
-    /* background-color: salmon; */
-    /* height: 13vh;
-}
-
-.vertical-nav-bar {
-    position: relative;
-    text-align: center;
-    left: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: calc(100vh - 20px - 2rem - 2rem - 10vh);
-    top: calc(40px + 2rem);
-    width: 53px;
-}
-
-@media screen and (max-width: 1340px) {
-    .vertical-nav-bar {
-        display: none;
+@media screen and (max-width: 850px) {
+    .header-logo-wrapper {
+        position: relative;
+        bottom: 0;
+        transition: all .5s;
     }
 
-    .header-copyright { */
-        /* display: none; */
-    /* }
-}
-
-@media screen and (max-width: 900px) { */
-    /* make horizontal nav bar hidden so it can be collapsed with menu button */
-    /* .horizontal-nav-bar { */
-        /* overflow: hidden; */
-        /* transition: right 1s;
+    .header-logo-wrapper.header-logo-hidden {
+        bottom: 70px;
     }
 
-} */
+    .header-mobile-icon-wrapper {
+        display: block;
+    }
+
+    /* move nav offscreen */
+    .header-nav {
+        position: absolute;
+        display: block;
+        width: 400px;
+        height: 100vh;
+        top: 0;
+        right: calc(-400px - 2.5vw);
+        text-align: center;
+        background-color: #161616;
+        padding-top: 50px;
+        transition: all 1s;
+    }
+
+    .header-nav.nav-show {
+        right: -2.5vw;
+    }
+
+    .mobile-menu-page-overlay {
+        background-color: black;
+        opacity: .3;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 100vh;
+        z-index: 50;
+        transition: all .85s;
+    }
+
+    .mobile-menu-page-overlay.show-overlay {
+        width: 100vw;
+    }
+
+    .mobile-nav-exit {
+        position: absolute;
+        font-size: 50px;
+        line-height: 20px;
+        top: 10px;
+        right: 10px;
+        color: white;
+    }
+
+    .mobile-nav-exit:hover {
+        cursor: pointer;
+    }
+
+    .menu-icon:hover {
+        cursor: pointer;
+    }
+
+    .nav-link {
+        margin-bottom: 10px;
+    }
+}
+
+/* make mobile nav take up entire screen */
+@media screen and (max-width: 550px) {
+
+}

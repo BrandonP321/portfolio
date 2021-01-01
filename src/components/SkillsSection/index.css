@@ -3,6 +3,7 @@
 }
 
 .skill-container {
+    position: relative;
     width: 33%;
     text-align: center;
     margin-bottom: 65px;
@@ -10,6 +11,14 @@
 
 .skill-icon {
     font-size: 70px;
+}
+
+.skill-icon-svg {
+    position: relative;
+    top: 3px;
+    fill: #727272;
+    height: 62px;
+    margin-bottom: 7px;
 }
 
 .skills-flex {

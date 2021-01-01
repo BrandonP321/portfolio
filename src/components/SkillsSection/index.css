@@ -1,0 +1,38 @@
+.skill-container {
+    width: 33%;
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.skill-icon {
+    font-size: 70px;
+}
+
+.skills-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #727272;
+}
+
+@media screen and (max-width: 800px) {
+    .skill-container {
+        margin-bottom: calc((800px - (800px - 100vw)) / 800 * 65);
+    }
+
+    .skill-icon {
+        font-size: calc((800px - (800px - 100vw)) / 800 * 70);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .skill-icon {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .skill-container {
+        width: 50%;
+    }
+}

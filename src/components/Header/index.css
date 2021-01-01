@@ -126,6 +126,13 @@ header {
 }
 
 /* make mobile nav take up entire screen */
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
+    .header-nav {
+        width: 100vw;
+        right: calc(-100vw - 2.5vw)
+    }
 
+    .mobile-menu-page-overlay {
+        display: none;
+    }
 }

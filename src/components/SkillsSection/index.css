@@ -1,3 +1,7 @@
+.carousel-indicators .active {
+    background-color: #cf0010 !important;
+}
+
 .skill-container {
     width: 33%;
     text-align: center;

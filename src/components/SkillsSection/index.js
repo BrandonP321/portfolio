@@ -17,7 +17,7 @@ export default function SkillsSection() {
         <div>
             <h2 className='section-header white-text'>Skills</h2>
             <Carousel activeIndex={index} onSelect={handleSelect}>
-                <Carousel.Item interval={5000}>
+                <Carousel.Item interval={5000000}>
                     <div className='skills-flex'>
                         <div className='skill-container'>
                             <i class="fab fa-html5 skill-icon"></i>
@@ -45,7 +45,7 @@ export default function SkillsSection() {
                         </div>
                     </div>
                 </Carousel.Item>
-                <Carousel.Item interval={5000}>
+                <Carousel.Item interval={5000000}>
                     <div className='skills-flex'>
                         <div className='skill-container'>
                             <JestLogo  className='skill-icon-svg'/>

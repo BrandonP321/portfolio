@@ -6,43 +6,63 @@
 }
 
 .project-container {
-    /* height: 530px; */
 }
 
 .project-img-container {
-    width: 691px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 690px;
+}
+
+.project-img-container img {
+    border-radius: 5px;
 }
 
 .project-brief-container {
     position: relative;
-    left: 40%;
-    bottom: 200px;
-    width: 691px;
-    max-width: 100%;
+    left: calc(100% - 691px);
+    bottom: 150px;
+    width: 100%;
+    max-width: 691px;
     background-color: #161616;
+    border-radius: 5px;
     padding: 2%;
     box-shadow: 0px 4px 16px black;
-    margin-bottom: 100px;
 }
 
 .project-title {
 
 }
 
-@media screen and (max-width: 1213px) and  (min-width: 727px) {
+/* fluidly move project brief down and increase bottom and top margins */
+@media screen and (max-width: 1050px) {
     .project-brief-container {
-        /* bottom: calc((461px - (1152px - 95vw)) / 461 * 200); */
-        /* left: calc((461px - (1152px - 95vw)) / 461 * 461); */
-        bottom: calc((486px - (1213px - 100vw)) / 486 * 200);
-        left: calc((486px - (1213px - 100vw)) / 486 * 461);
-    }
-
-    .project-container {
+        /* bottom: calc(1 / ((266px - (1050px - 100vw)) / 266)); */
+        bottom: calc((266px - (1050px - 100vw)) / 266 * 150);
+        margin-bottom: calc((1050px - 100vw) / 266 * 75);
+        margin-top: calc((1050px - 100vw) / 266 * 25);
     }
 }
 
-@media screen and (max-width: 727px) {
+@media screen and (max-width: 784px) {
+    .project-brief-container {
+        left: 0;
+        bottom: 0;
+        margin-top: 25px;
+        margin-bottom: 75px;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .project-btn {
+        float: right;
+    }
+
+    .project-title {
+        text-align: center;
+    }
+}
+
+/* @media screen and (max-width: 727px) {
     .project-brief-container {
         bottom: 0;
         left: 0;
@@ -56,4 +76,4 @@
     .project-btn {
         float: right;
     }
-}
+} */

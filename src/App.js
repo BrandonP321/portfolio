@@ -6,12 +6,14 @@ import ProjectOne from './pages/ProjectOne'
 import logo from './logo.svg';
 import './App.css';
 import Footer from './components/Footer'
+import VerticalNav from './components/VerticalNav'
 
 function App() {
   return (
     <div className="App">
       <Router>
       <Header />
+      <VerticalNav />
         <Switch>
           <Route exact path='/'>
             <Home />

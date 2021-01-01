@@ -1,0 +1,48 @@
+.vertical-nav-bar {
+    position: fixed;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 9%;
+}
+
+.vertical-nav-bar p {
+    position: relative;
+    left: 22px;
+}
+
+.vertical-nav-flex {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 45px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.vertical-nav-flex a {
+    color: white;
+    transition: color .2s;
+}
+
+.vertical-nav-flex a:hover {
+    color: #cf0010;
+}
+
+.nav-social-icon {
+    font-size: 20px;
+    color: inherit;
+}
+
+.navbar-spacer {
+    height: 33%;
+    width: 1px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .vertical-nav-bar {
+        display: none;
+    }
+}

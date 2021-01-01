@@ -1,5 +1,6 @@
 .home-content {
-    width: 1152px;
+    width: 90%;
+    max-width: 1152px;
     margin: 0 auto;
 }
 
@@ -31,7 +32,5 @@
 }
 
 @media screen and (max-width: 1212px) {
-    .home-content {
-        width: 95%;
-    }
+
 }

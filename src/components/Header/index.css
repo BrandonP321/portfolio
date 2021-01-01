@@ -69,7 +69,7 @@ header {
         display: block;
     }
 
-    /* move nav offscreen */
+    /* move nav off screen and resize */
     .header-nav {
         position: absolute;
         display: block;

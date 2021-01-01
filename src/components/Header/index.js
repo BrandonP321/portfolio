@@ -28,6 +28,20 @@ export default function Header() {
         setShowMobileMenu(!showMobileMenu)
     }
 
+    const handleNavItemClick = sectionId => {
+        // hide the mobile menu
+        setShowMobileMenu(false)
+        // if screen width is greater than 850px, automatically send user to section on page
+        if (window.innerWidth > 850) {
+            window.location.href = '/' + sectionId
+        } else {
+            // else menu needs to be hidden first, then redirect to section
+            setTimeout(() => {
+                window.location.href= '/' + sectionId
+            }, 500)
+        }
+    }
+
     return (
         <>
             {/* overlay covering site when movile nav is showing */}
@@ -41,11 +55,10 @@ export default function Header() {
                     {/* based on whether or not mobile menu is showing, update nav class */}
                     <nav className={showMobileMenu ? 'header-nav nav-show' : 'header-nav'}>
                         <p className='mobile-nav-exit' onClick={handleMenuIconClick}>&times;</p>
-                        <a href='/#' className='white-text nav-link'>Home</a><br />
-                        <a href='/#about' className='white-text nav-link'>About Me</a><br />
-                        <a href='/#skills' className='white-text nav-link'>Skills</a><br />
-                        <a href='/#projects' className='white-text nav-link'>Projects</a><br />
-                        <a href='/#contact' className='white-text nav-link'>Contact</a><br />
+                        <a className='white-text nav-link' onClick={() => handleNavItemClick('#')}>Home</a><br />
+                        <a className='white-text nav-link' onClick={() => handleNavItemClick('#projects')}>Projects</a><br />
+                        <a className='white-text nav-link' onClick={() => handleNavItemClick('#skills')}>Skills</a><br />
+                        <a className='white-text nav-link' onClick={() => handleNavItemClick('#contact')}>Contact</a><br />
                     </nav>
                     <div className='header-mobile-icon-wrapper'>
                         <i class="fas fa-bars menu-icon" onClick={handleMenuIconClick}></i>

@@ -7,7 +7,6 @@ import logo from './logo.svg';
 import './App.css';
 import Footer from './components/Footer'
 import VerticalNav from './components/VerticalNav'
-// import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (

@@ -1,16 +1,29 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { Router, Link } from 'react-router-dom'
 import './index.css'
 
 export default function Header() {
     const [fromTop, setFromTop] = useState(window.scrollY)
 
-    const [showMobileMenu, setShowMobileMenu] = useState(false)
+    const [showMobileMenu, setShowMobileMenuState] = useState(false)
+    const showMobileMenuRef = useRef(false)
+    const setShowMobileMenu = data => {
+        setShowMobileMenuState(data)
+        showMobileMenuRef.current = data
+    }
 
     // on load, add scroll event listener to track pixels scrolled from top of page
     useEffect(() => {
         document.addEventListener('scroll', event => {
             setFromTop(window.scrollY)
+        })
+
+        // if window changes size while mobile menu is showing, hide menu to remove hidden overflow of body
+        window.addEventListener('resize', () => {
+            console.log(window.innerWidth > 850, showMobileMenuRef.current)
+            if (window.innerWidth > 850 && showMobileMenuRef.current) {
+                setShowMobileMenu(false)
+            }
         })
     }, [])
 

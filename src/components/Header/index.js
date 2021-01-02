@@ -60,7 +60,7 @@ export default function Header() {
             {/* overlay covering site when movile nav is showing */}
             <div onClick={handleMenuIconClick} className={showMobileMenu ? 'mobile-menu-page-overlay show-overlay': 'mobile-menu-page-overlay'}></div>
             <header>
-                <div className={fromTop > 400 && !showMobileMenu ? 'header-bg header-active' : 'header-bg'}></div>
+                <div className={fromTop > 80 && !showMobileMenu ? 'header-bg header-active' : 'header-bg'}></div>
                 <div className='header-flex'>
                     <div className={showMobileMenu ? 'header-logo-wrapper header-logo-hidden' : 'header-logo-wrapper'}>
                         <a href='/' className='white-text header-logo'>Brand<span className='red-text'>o</span>n</a>

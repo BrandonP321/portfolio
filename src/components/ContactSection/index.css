@@ -1,0 +1,55 @@
+.contact-fields-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-input {
+    font-size: 1.5rem;
+    width: 100%;
+    background-color: #161616;
+    border: none;
+    border-bottom: 1px solid #727272;
+    color: white;
+    padding: .5%;
+    margin-bottom: 20px;
+}
+
+.contact-input:focus {
+    outline: none;
+    border-color: #cf0010;
+}
+
+.input-container {
+    margin-bottom: 2px;
+}
+
+.message-textarea {
+    margin-bottom: auto;
+}
+
+.name-input-container, .email-input-container {
+    width: calc(50% - 10px);
+}
+
+.send-btn {
+    border: none;
+    border-radius: 5px;
+    padding: .5% 4%;
+}
+
+.subject-input-container, .message-textarea-container {
+    width: 100%;
+}
+
+@media screen and (max-width: 784px) {
+    .send-btn {
+        float: right;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .name-input-container, .email-input-container {
+        width: 100%;
+    }
+}

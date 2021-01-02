@@ -5,17 +5,20 @@ import projects from '../../projects.json'
 import './index.css'
 import './contact.css'
 import SkillsSection from '../../components/SkillsSection'
+import ContactSection from '../../components/ContactSection'
 
 export default function Home() {
 
     return (
         <>
             <Hero />
-            <div className='skills-section' id='skills'>
+            <div className='skills-section section-wrapper' id='skills'>
+                <div className='section-anchor' id='skills'></div>
                 <SkillsSection />
             </div>
-            <div className='home-content'>
-                <div className='portfolio-section' id='projects'>
+            <div className='home-content-responsive-wrapper'>
+                <div className='portfolio-section section-wrapper'>
+                    <div className='section-anchor' id='projects'></div>
                     <h2 className='section-header white-text'>Projects</h2>
                     <div className='portfolios-container'>
                         {projects.map(project => {
@@ -24,25 +27,9 @@ export default function Home() {
                         )}
                     </div>
                 </div>
-                <div className='contact-section' id='contact'>
-                    <h2 className='section-header white-text'>Contact Me</h2>
-                    <form className='contact-form'>
-                        <div className='contact-fields-flex'>
-                            <div className='input-container name-input-container'>
-                                <input className='contact-input name-input' type='text' placeholder='Name*' required />
-                            </div>
-                            <div className='input-container email-input-container'>
-                                <input className='contact-input email-input' type='email' placeholder='E-mail*' required />
-                            </div>
-                            <div className='input-container subject-input-container'>
-                                <input className='contact-input subject-input' type='text' placeholder='Subject' />
-                            </div>
-                            <div className='input-container message-textarea-container'>
-                                <textarea className='contact-input message-textarea' placeholder='Message*' required></textarea>
-                            </div>
-                        </div>
-                        <button className='send-btn red-bg white-text'>Send</button>
-                    </form>
+                <div className='contact-section section-wrapper'>
+                    <div className='secion-anchor' id='contact'></div>
+                    <ContactSection />
                 </div>
             </div>
         </>

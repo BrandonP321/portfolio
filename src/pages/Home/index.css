@@ -1,19 +1,15 @@
-.home-content {
+.home-content-responsive-wrapper {
     width: 90%;
     max-width: 1152px;
     margin: 0 auto;
 }
 
-.portfolio-section {
-    margin-bottom: 2%;
-}
-
 .section-header {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 25px;
     font-size: 2.5rem;
 }
 
-@media screen and (max-width: 1212px) {
-
+.section-wrapper {
+    margin-bottom: 50px;
 }

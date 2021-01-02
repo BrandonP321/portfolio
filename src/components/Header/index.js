@@ -20,7 +20,6 @@ export default function Header() {
 
         // if window changes size while mobile menu is showing, hide menu to remove hidden overflow of body
         window.addEventListener('resize', () => {
-            console.log(window.innerWidth > 850, showMobileMenuRef.current)
             if (window.innerWidth > 850 && showMobileMenuRef.current) {
                 setShowMobileMenu(false)
             }

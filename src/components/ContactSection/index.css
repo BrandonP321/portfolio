@@ -44,7 +44,10 @@
 
 @media screen and (max-width: 784px) {
     .send-btn {
-        float: right;
+        position: relative;
+        /* float: right; */
+        /* to keep btn from being taken out of the flow, calc move from left rather than float right */
+        left: calc(100% - (38px + 8%));
     }
 }
 

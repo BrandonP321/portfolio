@@ -20,12 +20,11 @@ export default function Home() {
                 <div className='portfolio-section section-wrapper'>
                     <div className='section-anchor' id='projects'></div>
                     <h2 className='section-header white-text'>Projects</h2>
-                    <div className='portfolios-container'>
+                    {/* <div className='projects-container'> */}
                         {projects.map(project => {
-                            return <ProjectCard projectInfo={project} index={projects.indexOf(project)} />
-                        }
-                        )}
-                    </div>
+                            return <ProjectCard projectInfo={project} isLast={projects.indexOf(project) === projects.length - 1} />
+                        })}
+                    {/* </div> */}
                 </div>
                 <div className='contact-section section-wrapper'>
                     <div className='secion-anchor' id='contact'></div>

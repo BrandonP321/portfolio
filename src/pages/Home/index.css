@@ -1,3 +1,8 @@
+.contact-section {
+    position: relative;
+    /* bottom: 80px; */
+}
+
 .home-content-responsive-wrapper {
     width: 90%;
     max-width: 1152px;
@@ -11,5 +16,23 @@
 }
 
 .section-wrapper {
-    margin-bottom: 50px;
+    position: relative;
+}
+
+.skills-section, .portfolio-section {
+    margin-top: 50px;
+}
+
+/* while project card description is moving down, move contact section down to bottom: 0 */
+@media screen and (max-width: 1050px) {
+    /* .contact-section {
+        bottom: calc((266px - (1050px - 100vw)) / 266 * 80);
+    } */
+}
+
+/* stop contact section from moving down any more now that it has a value of 0 */
+@media screen and (max-width: 784px) {
+    .contact-section {
+        /* bottom: 0; */
+    }
 }

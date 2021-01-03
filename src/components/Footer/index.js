@@ -33,14 +33,14 @@ export default function Footer() {
                         <p className='footer-logo-subtext gray-text'>Full-Stack Web Devloper</p>
                     </div>
                     <div className='footer-column footer-site-links-container'>
-                        <h4 className='white-text footer-header'>Site Links</h4>
+                        <h4 className='gray-text'>Site Links</h4>
                         <a href='/' className='white-text footer-site-link'>Home</a><br />
                         <a href='/#about' className='white-text footer-site-link'>About Me</a><br />
                         <a href='/#projects' className='white-text footer-site-link'>Projects</a><br />
                         <a href='/#contact' className='white-text footer-site-link'>Contact Me</a><br />
                     </div>
                     <div className='footer-column footer-contact-container'>
-                        <h4 className='white-text footer-header'>Contact Info</h4>
+                        <h4 className='gray-text'>Contact Info</h4>
                         <a href='mailto: brandon.phillips976@gmail.com'>brandon.phillips976@gmail.com</a><br />
                         <a href='tel:406-671-6723' className='white-text'>406.671.6723</a>
                     </div>

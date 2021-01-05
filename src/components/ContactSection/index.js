@@ -20,7 +20,9 @@ export default function ContactSection() {
                         <textarea className='contact-input message-textarea' placeholder='Message*' required></textarea>
                     </div>
                 </div>
-                <button className='send-btn red-bg white-text'>Send</button>
+                <div className='send-btn-wrapper'>
+                    <button className='send-btn red-bg white-text'>Send</button>
+                </div>
             </form>
         </>
     )

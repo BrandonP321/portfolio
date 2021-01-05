@@ -35,7 +35,11 @@
 .send-btn {
     border: none;
     border-radius: 5px;
-    padding: .5% 4%;
+    padding: 7px 40px;
+}
+
+.send-btn-wrapper {
+    display: flex;
 }
 
 .subject-input-container, .message-textarea-container {
@@ -44,10 +48,10 @@
 
 @media screen and (max-width: 784px) {
     .send-btn {
-        position: relative;
-        /* float: right; */
-        /* to keep btn from being taken out of the flow, calc move from left rather than float right */
-        left: calc(100% - (38px + 8%));
+    }
+
+    .send-btn-wrapper {
+        justify-content: flex-end;
     }
 }
 

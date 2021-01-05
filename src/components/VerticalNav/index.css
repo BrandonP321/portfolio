@@ -1,3 +1,8 @@
+.nav-copyright {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
 .vertical-nav-bar {
     position: fixed;
     height: 91%;
@@ -5,7 +10,9 @@
     flex-direction: column;
     justify-content: space-between;
     top: 8%;
+    left: 0;
     z-index: 100;
+    transition: left 1s;
 }
 
 .vertical-nav-bar p {
@@ -42,8 +49,14 @@
     margin: 0 auto;
 }
 
+/* move vertical nav bar off screen */
 @media screen and (max-width: 1200px) {
+    .nav-copyright {
+        opacity: 0;
+    }
+
     .vertical-nav-bar {
-        display: none;
+        /* display: none; */
+        left: -100px;
     }
 }

@@ -35,8 +35,9 @@ export default function Footer() {
                     <div className='footer-column footer-site-links-container'>
                         <h4 className='gray-text'>Site Links</h4>
                         <a href='/' className='white-text footer-site-link'>Home</a><br />
-                        <a href='/#about' className='white-text footer-site-link'>About Me</a><br />
                         <a href='/#projects' className='white-text footer-site-link'>Projects</a><br />
+                        <a href='/#skills' className='white-text footer-site-link'>Skills</a><br />
+                        <a href='./assets/pdf/test-pdf.pdf' className='white-text footer-site-link'>Resume</a><br />
                         <a href='/#contact' className='white-text footer-site-link'>Contact Me</a><br />
                     </div>
                     <div className='footer-column footer-contact-container'>

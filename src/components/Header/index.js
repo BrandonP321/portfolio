@@ -70,6 +70,7 @@ export default function Header() {
                         <a className='white-text nav-link' onClick={() => handleNavItemClick('#')}>Home</a><br />
                         <a className='white-text nav-link' onClick={() => handleNavItemClick('#projects')}>Projects</a><br />
                         <a className='white-text nav-link' onClick={() => handleNavItemClick('#skills')}>Skills</a><br />
+                        <a href='./assets/pdf/test-pdf.pdf' target='_blank' className='white-text nav-link'>Resume</a><br />
                         <a className='white-text nav-link' onClick={() => handleNavItemClick('#contact')}>Contact</a><br />
                     </nav>
                     <div className='header-mobile-icon-wrapper'>

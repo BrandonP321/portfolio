@@ -9,3 +9,21 @@
     src: url(./assets/fonts/Gilroy-ExtraBold/font.woff);
     src: url(./assets/fonts/Gilroy-ExtraBold/font.woff2);
 }
+
+@font-face {
+    font-family: "Gilroy Bold";
+    src: url(./assets//fonts/Gilroy-Bold/font.woff);
+    src: url(./assets//fonts/Gilroy-Bold/font.woff2)
+}
+
+@font-face {
+    font-family: "Gilroy Regular";
+    src: url(./assets//fonts/Gilroy-Regular/font.woff);
+    src: url(./assets//fonts/Gilroy-Regular/font.woff2)
+}
+
+@font-face {
+    font-family: "Gilroy Semi Bold";
+    src: url(./assets//fonts/Gilroy-SemiBold/font.woff);
+    src: url(./assets//fonts/Gilroy-SemiBold/font.woff2)
+}

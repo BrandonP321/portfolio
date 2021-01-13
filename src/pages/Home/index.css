@@ -9,6 +9,11 @@
     margin: 0 auto;
 }
 
+.section-anchor {
+    position: relative;
+    top: -100px;
+}
+
 .section-header {
     text-align: center;
     margin-bottom: 25px;

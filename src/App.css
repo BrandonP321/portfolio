@@ -5,6 +5,7 @@ html {
 body {
     background-color: #161616;
     font-family: "Gilroy Regular";
+    word-spacing: 1px;
 }
 
 .white-text {

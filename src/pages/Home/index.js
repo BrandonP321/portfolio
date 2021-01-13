@@ -11,7 +11,7 @@ export default function Home() {
     return (
         <>
             <Hero />
-            <div className='skills-section section-wrapper' id='skills'>
+            <div className='skills-section section-wrapper'>
                 <div className='section-anchor' id='skills'></div>
                 <SkillsSection />
             </div>

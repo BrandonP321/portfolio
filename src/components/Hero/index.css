@@ -25,7 +25,7 @@
 
 .hero-text-outer-wrapper {
     position: absolute;
-    top: 55%;
+    bottom: 50%;
     left: 5%;
     width: 90%;
 }
@@ -44,7 +44,7 @@
 @media screen and (max-height: 850px) {
     .hero-img {
         transform: scale(1);
-        object-position: 50% -130px;
+        object-position: 50% 50%;
     }
 }
 
@@ -52,17 +52,11 @@
     .hero-img {
         object-position: 0px 50%;
     }
-
-    @media screen and (max-height: 850px) {
-        .hero-img {
-            object-position: 0px -100px;
-        }
-    }
 }
 
 @media screen and (max-width: 1450px) {
     .hero-img {
-        object-position: -150px 50%;
+        object-position: 50% 50%;
     }
 }
 
@@ -75,12 +69,6 @@
 @media screen and (max-width: 1200px) {
     .hero-img {
         transform: scale(1.2);
-    }
-
-    @media screen and (max-height: 600px) {
-        .hero-img {
-            object-position: 50% -50px;
-        }
     }
 }
 
@@ -109,7 +97,7 @@
     }
 
     .hero-title {
-        font-size: calc((550px - (550px - 100vw)) / 550 * 75);
+        font-size: calc((550px - (550px - 100vw)) / 550 * 90);
         text-indent: calc((550px - (550px - 100vw)) / 550 * -5);
         line-height: calc((550px - (550px - 100vw)) / 550 * 56);
     }

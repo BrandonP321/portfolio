@@ -23,6 +23,10 @@
     border-radius: 5px;
 }
 
+.project-img-container img:hover {
+    cursor: pointer;
+}
+
 .project-brief-container {
     position: relative;
     width: min(100%, 691px);

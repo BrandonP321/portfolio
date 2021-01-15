@@ -72,7 +72,7 @@ export default function ProjectCard(props) {
     return (
         <div className={props.isLast ? 'project-container last-project' : 'project-container'}>
             <div className='project-img-container'>
-                <img className='img-fluid project-img' src={props.projectInfo.image} alt={props.projectInfo.alt_text} />
+                <img className='img-fluid project-img' src={props.projectInfo.image} alt={props.projectInfo.alt_text} onClick={() => window.location.href = props.projectInfo.site_url} />
             </div>
             <div className='project-brief-flex-wrapper'>
                 <div

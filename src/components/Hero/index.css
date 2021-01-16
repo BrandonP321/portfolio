@@ -90,9 +90,31 @@
 
 /* lock in title size so it stops getting smaller */
 @media screen and (max-width: 400px) {
+    .hero-text-container {
+        top: 6vh;
+    }
+
     .hero-title {
         font-size: 3.3rem;
         text-indent: -3px;
         line-height: 33px;
+    }
+}
+
+/* resize text when screen is small but screen is landscape */
+@media screen and (max-height: 500px) and (max-width: 850px) {
+    .hero-sub-text {
+        font-size: 1.05rem;
+    }
+
+    .hero-title {
+        font-size: 3.3rem;
+    }
+
+    @media screen and (orientation: landscape) {
+        /* when phone is on it's side, move text container up */
+        .hero-text-container {
+            top: -5vh;
+        }
     }
 }

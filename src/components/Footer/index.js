@@ -42,7 +42,7 @@ export default function Footer() {
                     </div>
                     <div className='footer-column footer-contact-container'>
                         <h4 className='gray-text'>Contact Info</h4>
-                        <a href='mailto: brandon.phillips976@gmail.com'>brandon.phillips976@gmail.com</a><br />
+                        <a href='mailto: brandon.phillips@bphillips.dev'>brandon.phillips@bphillips.dev</a><br />
                         <a href='tel:406-671-6723' className='white-text'>406.671.6723</a>
                     </div>
             </div>

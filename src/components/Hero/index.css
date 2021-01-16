@@ -4,7 +4,7 @@
     object-fit: cover;
     object-position: 150px -50px;
     transform: scale(1.3);
-    transition: transform 1s, object-position 1s;
+    /* transition: transform 1s, object-position 1s; */
 }
 
 .hero-img-wrapper {
@@ -13,13 +13,19 @@
     overflow: hidden;
 }
 
+.hero-my-title {
+    margin-bottom: 10px;
+}
+
+.hero-sub-text {
+    font-size: 1.2rem;
+}
 
 .hero-text-container {
     width: 330px;
     max-width: 100%;
     position: absolute;
-    top: 0;
-    /* left: 20%; */
+    top: 3vh;
     left: calc((1370px - (1920px - 100vw)) / 1370 * 350)
 }
 
@@ -32,7 +38,7 @@
 
 .hero-title {
     font-family: 'Gilroy Semi Bold', sans-serif;
-    font-size: 90px;
+    font-size: 5.3rem;
     line-height: 56px;
     text-indent: -5px;
 }
@@ -41,40 +47,24 @@
     width: 100%;
 }
 
-@media screen and (max-height: 850px) {
-    .hero-img {
-        transform: scale(1);
-        object-position: 50% 50%;
-    }
-}
-
 @media screen and (max-width: 1600px) {
     .hero-img {
-        object-position: 0px 50%;
-    }
-}
-
-@media screen and (max-width: 1450px) {
-    .hero-img {
-        object-position: 50% 50%;
-    }
-}
-
-@media screen and (max-width: 1250px) {
-    .hero-img {
-        object-position: 50% 50%;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .hero-img {
-        transform: scale(1.2);
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .hero-img {
         transform: scale(1.1);
+        object-position: 50% 50%;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .hero-sub-text {
+        font-size: 1.05rem;
+    }
+
+    .hero-my-title {
+        margin-bottom: 5px;
+    }
+
+    .hero-title {
+        font-size: 4.3rem;
     }
 }
 
@@ -96,17 +86,12 @@
         left: 0;
     }
 
-    .hero-title {
-        font-size: calc((550px - (550px - 100vw)) / 550 * 90);
-        text-indent: calc((550px - (550px - 100vw)) / 550 * -5);
-        line-height: calc((550px - (550px - 100vw)) / 550 * 56);
-    }
 }
 
 /* lock in title size so it stops getting smaller */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 400px) {
     .hero-title {
-        font-size: 41px;
+        font-size: 3.3rem;
         text-indent: -3px;
         line-height: 33px;
     }

@@ -1,6 +1,5 @@
 .contact-section {
     position: relative;
-    /* bottom: 80px; */
 }
 
 .home-content-responsive-wrapper {
@@ -16,8 +15,9 @@
 
 .section-header {
     text-align: center;
-    margin-bottom: 25px;
-    font-size: 2.5rem;
+    margin-bottom: clamp(20px, calc((200px - (500px - 100vw)) / 200 * 50), 50px);
+    font-size: 3.1rem;
+    font-family: 'Gilroy Semi Bold', Arial, Helvetica, sans-serif
 }
 
 .section-wrapper {
@@ -39,5 +39,11 @@
 @media screen and (max-width: 784px) {
     .contact-section {
         /* bottom: 0; */
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .section-header {
+        font-size: 2.5rem;
     }
 }

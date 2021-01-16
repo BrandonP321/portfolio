@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react'
 import axios from 'axios'
 import './index.css'
 
-const APIDomain = process.env.APIDomain || "http://localhost:8000"
+const APIDomain = process.env.REACT_APP_API_Domain || "http://localhost:8000"
 
 export default function ContactSection() {
     const [message, setMessage] = useState({
@@ -14,6 +14,8 @@ export default function ContactSection() {
 
     const leftSpinner = useRef()
     const rightSpinner = useRef()
+
+    const [helperTextState, setHelperTextState] = useState('')
 
     const handleInputChange = (e) => {
         // get name and value of input changed
@@ -27,6 +29,9 @@ export default function ContactSection() {
     const handleFormSubmit = (e) => {
         e.preventDefault();
 
+        // reset helper text beneath form to empty string
+        setHelperTextState('')
+
         // change opacity of spinners to show message is sending, only one will have a display based on screen size (handled in css)
         leftSpinner.current.style.opacity = 1
         rightSpinner.current.style.opacity = 1
@@ -36,12 +41,18 @@ export default function ContactSection() {
             .then(({ data }) => {
                 console.log('message sent')
 
+                // set helper text to tell user message was sent
+                setHelperTextState('Message sent')
+
                 // hide spinners
                 leftSpinner.current.style.opacity = 0
                 rightSpinner.current.style.opacity = 0
             })
             .catch(err => {
                 console.log(err)
+
+                // set helper text to tell user an error occured
+                setHelperTextState('An error occured while trying to send your message')
 
                 // hide spinners
                 leftSpinner.current.style.opacity = 0
@@ -72,6 +83,7 @@ export default function ContactSection() {
                     <button className='send-btn red-bg white-text'>Send</button>
                     <i className='fad fa-spinner-third spinner right' ref={rightSpinner}></i>
                 </div>
+                <small className='contact-helper-text'>{helperTextState}</small>
             </form>
         </>
     )

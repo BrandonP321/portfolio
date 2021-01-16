@@ -42,6 +42,14 @@
     margin-bottom: 0;
 }
 
+.project-brief-container .project-desc {
+    font-size: 1.1rem;
+}
+
+.project-brief-container .project-title {
+    
+}
+
 /* wrapper to keep project brief in flow but to the right */
 .project-brief-flex-wrapper {
     width: 100%;

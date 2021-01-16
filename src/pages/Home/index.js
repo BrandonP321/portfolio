@@ -3,7 +3,6 @@ import Hero from '../../components/Hero'
 import ProjectCard from '../../components/ProjectCard'
 import projects from '../../projects.json'
 import './index.css'
-import './contact.css'
 import SkillsSection from '../../components/SkillsSection'
 import ContactSection from '../../components/ContactSection'
 

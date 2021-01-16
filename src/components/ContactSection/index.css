@@ -9,6 +9,11 @@
     justify-content: space-between;
 }
 
+.contact-helper-text {
+    color: #cf0010;
+    font-size: 1rem;
+}
+
 .contact-input {
     font-size: 1.5rem;
     width: 100%;

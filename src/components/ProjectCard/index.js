@@ -2,6 +2,12 @@ import React, { useState, useEffect, useRef } from 'react'
 import Measure from 'react-measure'
 import './index.css'
 
+const briefDivStyles = {
+    marginBottom: 'clamp(0px, calc((1050px - 100vw) / 266 * 40), 40px)',
+    marginTop: 'clamp(0px, calc((1050px - 100vw) / 266 * 5), 5px)',
+    bottom: '150px'
+}
+
 export default function ProjectCard(props) {
     // create refs to elements in project card
     const briefDiv = useRef()
@@ -77,7 +83,7 @@ export default function ProjectCard(props) {
             <div className='project-brief-flex-wrapper'>
                 <div
                     className={props.isLast ? 'project-brief-container last-project' : 'project-brief-container'}
-                    style={{ bottom: '150px' }}
+                    style={briefDivStyles}
                     ref={briefDiv}
                 >
                     <h3 ref={projectHeading} className='project-title white-text'>{props.projectInfo.name}</h3>

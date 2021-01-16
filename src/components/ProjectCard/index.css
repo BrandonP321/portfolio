@@ -30,12 +30,11 @@
 .project-brief-container {
     position: relative;
     width: min(100%, 691px);
-    margin-bottom: clamp(0px, calc((1050px - 100vw) / 266 * 40), 40px);
-    margin-top: clamp(0px, calc((1050px - 100vw) / 266 * 5), 5px);
     background-color: #161616;
     border-radius: 5px;
     padding: 2%;
     /* box shadow & bottom handled in JS */
+    /* margins as inline styles */
 }
 
 .project-brief-container.last-project {

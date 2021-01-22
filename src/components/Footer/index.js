@@ -21,7 +21,7 @@ export default function Footer() {
         {
             title: 'Mail',
             icon_html: <i class="fas fa-envelope social-icon"></i>,
-            url: 'mailto: brandon.phillips976@gmail.com'
+            url: '#contact'
         },
     ])
 
@@ -42,7 +42,6 @@ export default function Footer() {
                     </div>
                     <div className='footer-column footer-contact-container'>
                         <h4 className='gray-text'>Contact Info</h4>
-                        <a href='mailto: brandon.phillips@bphillips.dev'>brandon.phillips@bphillips.dev</a><br />
                         <a href='tel:406-671-6723' className='white-text'>406.671.6723</a>
                     </div>
             </div>
@@ -50,7 +49,7 @@ export default function Footer() {
             <div className='footer-socials-container'>
                 {socials.map(social => {
                     return (
-                        <a href={social.url} target='_blank' className='social-circle' >
+                        <a href={social.url} target={social.title !== 'Mail' ? '_blank' : ''} className='social-circle' >
                             {social.icon_html}
                         </a>
                     )

@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react'
+import ReCAPTCHA from 'react-google-recaptcha'
 import axios from 'axios'
 import './index.css'
 
@@ -15,6 +16,8 @@ export default function ContactSection() {
     const leftSpinner = useRef()
     const rightSpinner = useRef()
 
+    const recaptcha = useRef();
+
     const [helperTextState, setHelperTextState] = useState('')
 
     const handleInputChange = (e) => {
@@ -28,6 +31,16 @@ export default function ContactSection() {
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
+        
+        // get value of reCAPTCHA checkbox
+        const recaptchaValue = recaptcha.current.getValue()
+
+        // if recaptcha has no value, don't allow submition of form
+        if (!recaptchaValue) {
+            // tell user to show they are not a robot
+            setHelperTextState('Confirm you are not a robot')
+            return
+        }
 
         // reset helper text beneath form to empty string
         setHelperTextState('')
@@ -60,6 +73,7 @@ export default function ContactSection() {
             })
     }
 
+
     return (
         <>
             <h2 className='section-header white-text'>Contact Me</h2>
@@ -78,6 +92,11 @@ export default function ContactSection() {
                         <textarea className='contact-input message-textarea' placeholder='Message*' name='message' value={message.message} onChange={handleInputChange} required></textarea>
                     </div>
                 </div>
+                <ReCAPTCHA 
+                    ref={recaptcha}
+                    sitekey='6LePuzYaAAAAAD9C4g5367yzQNILUWlkhPtJr6CF'
+                    theme='dark'
+                />
                 <div className='send-btn-wrapper'>
                     <i className='fad fa-spinner-third spinner left' ref={leftSpinner}></i>
                     <button className='send-btn red-bg white-text'>Send</button>

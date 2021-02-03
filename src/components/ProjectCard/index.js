@@ -13,6 +13,12 @@ export default function ProjectCard(props) {
     const briefDiv = useRef()
     const buttonsWrapper = useRef()
     const projectHeading = useRef()
+    const moreInfoBtn = useRef()
+    const viewSiteBtn = useRef()
+    const gitLinkBtn = useRef()
+
+    // state tells if user is focused on 'more info' btn
+    const [isFocusedOnBtns, setIsFocusedOnBtns] = useState(false)
 
     // ref to hold media query
     const query = useRef()
@@ -35,7 +41,7 @@ export default function ProjectCard(props) {
 
         // update bottom css prop for project brief div
         briefDiv.current.style.bottom = `clamp(0px, calc((269px - (1037px - (100vw - ${data}px))) / 269 * 150), 150px)`
-        
+
         // update media query ref to use new scroll bar width
         setQuery(data)
     }
@@ -60,6 +66,18 @@ export default function ProjectCard(props) {
             projectHeading.current.style.textAlign = 'center'
             buttonsWrapper.current.style.justifyContent = 'flex-end'
         }
+
+
+        // add mouse click listener for when user clicks off of the 'more info' btn
+        document.addEventListener('click', e => {
+            // if target is not either the 'view site' or 'github repo' btn, update state
+            if (e.target !== viewSiteBtn.current &&
+                e.target !== gitLinkBtn.current &&
+                e.target !== moreInfoBtn.current) {
+                console.log('unfocus')
+                setIsFocusedOnBtns(false)
+            }
+        })
     }, [])
 
     const queryListener = (e) => {
@@ -75,10 +93,16 @@ export default function ProjectCard(props) {
         }
     }
 
+    const handleTopBtnClick = () => {
+        // when user clicks more info btn, set state to true
+        setIsFocusedOnBtns(true)
+        console.log('focused')
+    }
+
     return (
         <div className={props.isLast ? 'project-container last-project' : 'project-container'}>
             <div className='project-img-container'>
-                <img className='img-fluid project-img' src={props.projectInfo.image} alt={props.projectInfo.alt_text} onClick={() => window.location.href = props.projectInfo.site_url} />
+                <img className='img-fluid project-img' src={props.projectInfo.image} alt={props.projectInfo.alt_text} onClick={() => window.open(props.projectInfo.site_url)} />
             </div>
             <div className='project-brief-flex-wrapper'>
                 <div
@@ -89,7 +113,21 @@ export default function ProjectCard(props) {
                     <h3 ref={projectHeading} className='project-title white-text'>{props.projectInfo.name}</h3>
                     <p className='project-desc gray-text'>{props.projectInfo.description}</p>
                     <div className='project-btns' ref={buttonsWrapper}>
-                        <a className='project-btn-link' href={`/project/${props.projectInfo.projectIndex}`}><div className='project-btn red-bg white-text'>More Info</div></a>
+                        <button
+                            className={`project-btn red-bg white-text top${isFocusedOnBtns ? ' hide' : ''}`}
+                            onClick={handleTopBtnClick}
+                            ref={moreInfoBtn}>More Info
+                        </button>
+                        <a
+                            className={`project-btn red-bg white-text view-site${isFocusedOnBtns ? ' show' : ''}`}
+                            ref={viewSiteBtn}
+                            href={props.projectInfo.site_url}
+                            target='_blank'>View Site</a>
+                        <a
+                            className={`project-btn red-bg white-text git-link${isFocusedOnBtns ? ' show' : ''}`}
+                            ref={gitLinkBtn}
+                            href={props.projectInfo.github_repo_url}
+                            target='_blank'>GitHub Repo</a>
                     </div>
                 </div>
             </div>

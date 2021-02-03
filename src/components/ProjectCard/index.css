@@ -1,11 +1,87 @@
 .project-btn {
     position: relative;
     padding: 7px 40px;
+    border: 2px solid;
     border-radius: 5px;
+}
+
+a.project-btn:hover {
+    cursor: pointer;
+}
+
+.project-btn.top {
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    transition: left .5s, top .5s;
+}
+
+.project-btn.top:focus {
+    outline: none;
+}
+
+/* on hide, put btn behind .view-site btn and keep it under it during transition */
+.project-btn.top.hide {
+    position: absolute;
+    left: 200px;
+    z-index: 2;
+}
+
+.project-btn.git-link {
+    background-color: transparent;
+    transition: width .5s, background-color .5s, border .5s;
+}
+
+.project-btn.git-link.show {
+    position: relative;
+    z-index: 3;
+    width: 180px;
+    border: 2px solid #727272;
+}
+
+.project-btn.git-link.show:hover {
+    background-color: #727272;
+}
+
+.project-btn.view-site {
+    transition: left .5s, top .5s;
+}
+
+.project-btn.view-site.show {
+    position: absolute;
+    left: 200px;
+    z-index: 4;
+    border: 2px solid #cf0010;
+}
+
+.project-btn.git-link.show,
+.project-btn.view-site.show {
+    opacity: 1;
+    display: inline-block;
+}
+
+
+.project-btn.view-site,
+.project-btn.git-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 151px;
+    max-height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    border-color: transparent;
+}
+
+.project-btn.top,
+.project-btn.view-site {
+    border-color: #cf0010;
 }
 
 .project-btns {
     display: flex;
+    position: relative;
     width: 100%;
 }
 
@@ -65,6 +141,28 @@
 
 /* return last project card's height to default and add bottom margin */
 @media screen and (max-width: 784px) {
+    .project-btn.git-link {
+
+    }
+
+    .project-btn.view-site,
+    .project-btn.top,
+    .project-btn.git-link {
+        left: auto;
+        right: 0;
+    }
+
+    .project-btn.view-site.show {
+        box-shadow: -5px 3px 7px rgba(0, 0, 0, .5);
+    }
+
+    .project-btn.view-site.show,
+    .project-btn.top.hide {
+        top: 60px;
+        right: 0;
+        left: auto;
+    }
+
     .project-container.last-project {
         height: auto;
         margin-bottom: 43px;

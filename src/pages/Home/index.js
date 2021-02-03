@@ -25,7 +25,7 @@ export default function Home() {
                     {/* </div> */}
                 </div>
                 <div className='contact-section section-wrapper'>
-                    <div className='secion-anchor' id='contact'></div>
+                    <div className='section-anchor' id='contact'></div>
                     <ContactSection />
                 </div>
             </div>

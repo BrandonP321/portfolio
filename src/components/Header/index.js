@@ -72,6 +72,17 @@ export default function Header() {
                         <a className='white-text nav-link' onClick={() => handleNavItemClick('#skills')}>Skills</a><br />
                         <a href='./assets/pdf/test-pdf.pdf' target='_blank' className='white-text nav-link'>Resume</a><br />
                         <a className='white-text nav-link' onClick={() => handleNavItemClick('#contact')}>Contact</a><br />
+                        <div className='mobile-social-icons'>
+                            <a href='https://www.linkedin.com/in/brandon-phillips-2554801a1/' target='_blank'>
+                                <i className='fab fa-linkedin'></i>
+                            </a>
+                            <a href='https://github.com/BrandonP321' target='_blank'>
+                                <i className='fab fa-github-alt'></i>
+                            </a>
+                            <a href='https://stackoverflow.com/users/13790075/brandonp321' target='_blank'>
+                                <i className='fab fa-stack-overflow'></i>
+                            </a>
+                        </div>
                     </nav>
                     <div className='header-mobile-icon-wrapper'>
                         <i class="fas fa-bars menu-icon" onClick={handleMenuIconClick}></i>

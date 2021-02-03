@@ -6,6 +6,20 @@ header {
     z-index: 500;
 }
 
+header .mobile-social-icons {
+    position: absolute;
+    bottom: 30px;
+    left: 25%;
+    display: none;
+    justify-content: space-between;
+    width: 50%;
+}
+
+header .mobile-social-icons i {
+    font-size: 1.5rem;
+    color: white;
+}
+
 .header-bg {
     position: absolute;
     top: 0;
@@ -61,6 +75,10 @@ header {
 }
 
 @media screen and (max-width: 850px) {
+    header .mobile-social-icons {
+        display: flex;
+    }
+
     .header-logo-wrapper {
         position: relative;
         bottom: 0;

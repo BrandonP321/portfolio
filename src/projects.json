@@ -27,7 +27,7 @@
         "name": "Netflix Clone",
         "image": "./assets/images/netflix-clone-capture.png",
         "alt_text": "Screen capture of netflix clone site.",
-        "site_url": "http://www.netflix-clone.bphillips.dev",
+        "site_url": "https://netflix-cloned.herokuapp.com/",
         "github_repo_url": "https://github.com/BrandonP321/netflix-clone",
         "description": "If you're a TV & movie streaming regular like myself, then I've got a feeling you might find this particular project a little familiar."
     },

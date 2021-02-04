@@ -38,5 +38,13 @@
         "site_url": "https://www.google-clone.bphillips.dev",
         "github_repo_url": "https://github.com/BrandonP321/google-site-clone",
         "description": "Perhaps you didn't recognize my clone of Netflix, but if you are literally any human being who doesn't live under a rock, I guarantee you'll find this site extremely familiar."
+    },
+    {
+        "name": "Instablog (Blog CMS)",
+        "image": "./assets/images/instablog-capture.png",
+        "alt_text": "Screen capture of Instablog website",
+        "site_url": "https://brandonp321.github.io/blog-cms/",
+        "github_repo_url": "https://github.com/BrandonP321/blog-cms",
+        "description": "Create and share blog posts in a snap."
     }
 ]

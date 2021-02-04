@@ -168,3 +168,9 @@ a.project-btn:hover {
         margin-bottom: 43px;
     }
 }
+
+@media screen and (max-width: 650px) {
+    .project-brief-container {
+        padding: 2% 0;
+    }
+}

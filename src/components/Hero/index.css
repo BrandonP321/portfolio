@@ -25,7 +25,7 @@
     width: 330px;
     max-width: 100%;
     position: absolute;
-    top: 7vh;
+    top: 3vh;
     left: calc((1370px - (1920px - 100vw)) / 1370 * 350)
 }
 
@@ -84,16 +84,13 @@
 @media screen and (max-width: 550px) {
     .hero-text-container {
         left: 0;
+        top: 7vh;
     }
 
 }
 
 /* lock in title size so it stops getting smaller */
 @media screen and (max-width: 400px) {
-    .hero-text-container {
-        top: 6vh;
-    }
-
     .hero-title {
         font-size: 3.3rem;
         text-indent: -3px;

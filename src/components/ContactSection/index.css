@@ -73,7 +73,8 @@
 }
 
 @media screen and (max-width: 784px) {
-    .send-btn {
+    .contact-helper-text {
+        float: right;
     }
 
     .send-btn-wrapper {

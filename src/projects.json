@@ -19,7 +19,7 @@
         "name": "1-2-3 Chess",
         "image": "./assets/images/123-chess-capture.png",
         "alt_text": "Screenshot of 123 chess chessboard",
-        "site_url": "https://brandonp321.github.io/chess-game",
+        "site_url": "https://123-chess.bphillips.dev",
         "github_repo_url": "https://github.com/BrandonP321/chess-game",
         "description": "Play chess with your friends in just 3 simple steps.  Go to the site, create or join an existing game, & hit play!"
     },
@@ -35,16 +35,8 @@
         "name": "Instablog (Blog CMS)",
         "image": "./assets/images/instablog-capture.png",
         "alt_text": "Screen capture of Instablog website",
-        "site_url": "https://brandonp321.github.io/blog-cms/",
+        "site_url": "https://instablog.bphillips.dev",
         "github_repo_url": "https://github.com/BrandonP321/blog-cms",
         "description": "Create and share blog posts in a snap."
-    },
-    {
-        "name": "Google Clone",
-        "image": "./assets/images/google-clone-capture.png",
-        "alt_text": "Screen capture of google site clone",
-        "site_url": "https://www.google-clone.bphillips.dev",
-        "github_repo_url": "https://github.com/BrandonP321/google-site-clone",
-        "description": "Perhaps you didn't recognize my clone of Netflix, but if you are literally any human being who doesn't live under a rock, I guarantee you'll find this site extremely familiar."
     }
 ]

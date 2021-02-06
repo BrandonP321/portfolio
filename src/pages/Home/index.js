@@ -18,11 +18,9 @@ export default function Home() {
                 <div className='portfolio-section section-wrapper'>
                     <div className='section-anchor' id='projects'></div>
                     <h2 className='section-header white-text'>Projects</h2>
-                    {/* <div className='projects-container'> */}
-                        {projects.map(project => {
-                            return <ProjectCard projectInfo={project} isLast={projects.indexOf(project) === projects.length - 1} />
-                        })}
-                    {/* </div> */}
+                    {projects.map(project => {
+                        return <ProjectCard projectInfo={project} isLast={projects.indexOf(project) === projects.length - 1} />
+                    })}
                 </div>
                 <div className='contact-section section-wrapper'>
                     <div className='section-anchor' id='contact'></div>

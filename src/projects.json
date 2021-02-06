@@ -1,7 +1,7 @@
 [
     {
         "name": "FBI Wanted",
-        "image": "./assets/images/fbi-wanted-capture.png",
+        "image": "./assets/images/fbi-wanted-capture.webp",
         "alt_text": "Screenshot of fbi wanted website",
         "site_url": "https://fbi-wanted.bphillips.dev",
         "github_repo_url": "https://github.com/BrandonP321/google-site-clone",
@@ -9,7 +9,7 @@
     },
     {
         "name": "Portfolio",
-        "image": "./assets/images/social.png",
+        "image": "./assets/images/social.webp",
         "alt_text": "this is a placeholder image",
         "site_url": "/",
         "github_repo_url": "https://github.com/BrandonP321/portfolio",
@@ -17,7 +17,7 @@
     },
     {
         "name": "1-2-3 Chess",
-        "image": "./assets/images/123-chess-capture.png",
+        "image": "./assets/images/123-chess-capture.webp",
         "alt_text": "Screenshot of 123 chess chessboard",
         "site_url": "https://123-chess.bphillips.dev",
         "github_repo_url": "https://github.com/BrandonP321/chess-game",
@@ -25,7 +25,7 @@
     },
     {
         "name": "Netflix Clone",
-        "image": "./assets/images/netflix-clone-capture.png",
+        "image": "./assets/images/netflix-clone-capture.webp",
         "alt_text": "Screen capture of netflix clone site.",
         "site_url": "https://brandonp321.github.io/netflix-clone/",
         "github_repo_url": "https://github.com/BrandonP321/netflix-clone",
@@ -33,7 +33,7 @@
     },
     {
         "name": "Instablog (Blog CMS)",
-        "image": "./assets/images/instablog-capture.png",
+        "image": "./assets/images/instablog-capture.webp",
         "alt_text": "Screen capture of Instablog website",
         "site_url": "https://instablog.bphillips.dev",
         "github_repo_url": "https://github.com/BrandonP321/blog-cms",

@@ -4,7 +4,7 @@ This is my professional portfolio where I feature some of the top projects I hav
 # Screenshots
 ![Screenshot of portfolio site](./public/assets/images/social.webp)
 
-![Screenshot of site on mobile device](https://i.imgur.com/b74WPRc.jpg)
+![Screenshot of site on mobile device](https://i.imgur.com/q6kVSg5.jpg)
 
 # Ligthouse Ratings
 ![Screenshot of Lighthouse scores for site](https://i.imgur.com/0KKgymD.jpg)

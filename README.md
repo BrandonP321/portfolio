@@ -6,22 +6,26 @@ This is my professional portfolio where I feature some of the top projects I hav
 
 ![Screenshot of site on mobile device](https://i.imgur.com/b74WPRc.jpg)
 
+# Ligthouse Ratings
+![Screenshot of Lighthouse scores for site](https://i.imgur.com/0KKgymD.jpg)
+
 # Technologies Used
 ## Front End
 - React.js
+- Bootstrap
 
 ## Back End
 - Node.js & Express
-- NoSQL with mongoose ORM
+- Nodemailer
 
 # Back End Server
 Click [here](https://github.com/BrandonP321/blog-cms-server) to visit the repository and README for the Node.js server.
 
 # Features
-- Mobile responsive design
-- Sing in form with autocomplete functionality
-- Full CRUD functionality over user's blog posts
-- Multiple options when creating blog post to customize post layout to user's specific needs
+- Fluid responsive design
+- Contact form with reCAPTCHA form for preventing spam
+- High scores from chrom dev tools Lighthouse
+- All meta tags needed for optimal sharing of site on social media platforms
 
 # Installation
 Upon cloning the repo to your local machine, you just need to run `npm install` to install all dependencies 

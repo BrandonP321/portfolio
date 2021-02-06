@@ -70,7 +70,7 @@ export default function Header() {
                         <a className='white-text nav-link' onClick={() => handleNavItemClick('#')}>Home</a><br />
                         <a className='white-text nav-link' onClick={() => handleNavItemClick('#projects')}>Projects</a><br />
                         <a className='white-text nav-link' onClick={() => handleNavItemClick('#skills')}>Skills</a><br />
-                        <a href='./assets/pdf/resume.pdf' target='_blank' className='white-text nav-link'>Resume</a><br />
+                        <a href='./assets/pdf/Resume.pdf' target='_blank' className='white-text nav-link'>Resume</a><br />
                         <a className='white-text nav-link' onClick={() => handleNavItemClick('#contact')}>Contact</a><br />
                         <div className='mobile-social-icons'>
                             <a href='https://www.linkedin.com/in/brandon-phillips-2554801a1/' target='_blank'>

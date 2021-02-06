@@ -33,7 +33,7 @@ export default function Footer() {
                         <p className='footer-logo-subtext gray-text'>Full-Stack Web Devloper</p>
                     </div>
                     <div className='footer-column footer-site-links-container'>
-                        <h4 className='gray-text'>Site Links</h4>
+                        <h3 className='gray-text'>Site Links</h3>
                         <a href='/' className='white-text footer-site-link'>Home</a><br />
                         <a href='/#projects' className='white-text footer-site-link'>Projects</a><br />
                         <a href='/#skills' className='white-text footer-site-link'>Skills</a><br />
@@ -41,7 +41,7 @@ export default function Footer() {
                         <a href='/#contact' className='white-text footer-site-link'>Contact Me</a><br />
                     </div>
                     <div className='footer-column footer-contact-container'>
-                        <h4 className='gray-text'>Contact Info</h4>
+                        <h3 className='gray-text'>Contact Info</h3>
                         <a href='tel:406-671-6723' className='white-text'>406.671.6723</a>
                     </div>
             </div>
@@ -49,7 +49,12 @@ export default function Footer() {
             <div className='footer-socials-container'>
                 {socials.map(social => {
                     return (
-                        <a href={social.url} target={social.title !== 'Mail' ? '_blank' : ''} className='social-circle' >
+                        <a 
+                            href={social.url} 
+                            target={social.title !== 'Mail' ? '_blank' : ''} 
+                            className='social-circle' 
+                            aria-label={social.title}
+                        >
                             {social.icon_html}
                         </a>
                     )

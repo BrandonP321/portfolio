@@ -80,16 +80,16 @@ export default function ContactSection() {
             <form className='contact-form' onSubmit={handleFormSubmit}>
                 <div className='contact-fields-flex'>
                     <div className='input-container name-input-container'>
-                        <input className='contact-input name-input' type='text' placeholder='Name*' name='name' value={message.name} onChange={handleInputChange} required />
+                        <input id='nameInput' className='contact-input name-input' type='text' placeholder='Name*' name='name' value={message.name} onChange={handleInputChange} required />
                     </div>
                     <div className='input-container email-input-container'>
-                        <input className='contact-input email-input' type='email' placeholder='E-mail*' name='email' value={message.email} onChange={handleInputChange} required />
+                        <input id='emailInput' className='contact-input email-input' type='email' placeholder='E-mail*' name='email' value={message.email} onChange={handleInputChange} required />
                     </div>
                     <div className='input-container subject-input-container'>
-                        <input className='contact-input subject-input' type='text' placeholder='Subject' name='subject' value={message.subject} onChange={handleInputChange} />
+                        <input id='subjectInput' className='contact-input subject-input' type='text' placeholder='Subject' name='subject' value={message.subject} onChange={handleInputChange} />
                     </div>
                     <div className='input-container message-textarea-container'>
-                        <textarea className='contact-input message-textarea' placeholder='Message*' name='message' value={message.message} onChange={handleInputChange} required></textarea>
+                        <textarea id='messageInput' className='contact-input message-textarea' placeholder='Message*' name='message' value={message.message} onChange={handleInputChange} required></textarea>
                     </div>
                 </div>
                 <ReCAPTCHA 

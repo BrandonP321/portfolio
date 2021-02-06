@@ -102,7 +102,11 @@ export default function ProjectCard(props) {
     return (
         <div className={props.isLast ? 'project-container last-project' : 'project-container'}>
             <div className='project-img-container'>
-                <img className='img-fluid project-img' src={props.projectInfo.image} alt={props.projectInfo.alt_text} onClick={() => window.open(props.projectInfo.site_url)} />
+                <img className='img-fluid project-img' src={props.projectInfo.image} 
+                    alt={props.projectInfo.alt_text} 
+                    onClick={() => window.open(props.projectInfo.site_url)} 
+                    loading='lazy'
+                />
             </div>
             <div className='project-brief-flex-wrapper'>
                 <div

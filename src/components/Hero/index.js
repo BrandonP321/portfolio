@@ -5,7 +5,7 @@ export default function Hero() {
     return (
         <div className='home-hero-wrapper'>
             <div className='hero-img-wrapper'>
-                <img className='hero-img' src='./assets/images/hero.png' alt='placeholder hero img' />
+                <img className='hero-img' src='./assets/images/hero-min.png' alt='placeholder hero img' loading='lazy'/>
             </div>
             <div className='hero-text-outer-wrapper'>
                 <div className='hero-text-container'>

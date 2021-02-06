@@ -11,7 +11,8 @@ footer {
     margin-top: 70px;
 }
 
-footer h4 {
+footer h3 {
+    font-size: 1.6rem;
 }
 
 .footer-column {

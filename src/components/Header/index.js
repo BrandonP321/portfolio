@@ -70,16 +70,16 @@ export default function Header() {
                         <a className='white-text nav-link' onClick={() => handleNavItemClick('#')}>Home</a><br />
                         <a className='white-text nav-link' onClick={() => handleNavItemClick('#projects')}>Projects</a><br />
                         <a className='white-text nav-link' onClick={() => handleNavItemClick('#skills')}>Skills</a><br />
-                        <a href='./assets/pdf/Resume.pdf' target='_blank' className='white-text nav-link'>Resume</a><br />
+                        <a href='./assets/pdf/Resume.pdf' target='_blank' rel='noopener' className='white-text nav-link'>Resume</a><br />
                         <a className='white-text nav-link' onClick={() => handleNavItemClick('#contact')}>Contact</a><br />
                         <div className='mobile-social-icons'>
-                            <a href='https://www.linkedin.com/in/brandon-phillips-2554801a1/' target='_blank'>
+                            <a href='https://www.linkedin.com/in/brandon-phillips-2554801a1/' target='_blank' rel='noopener'>
                                 <i className='fab fa-linkedin'></i>
                             </a>
-                            <a href='https://github.com/BrandonP321' target='_blank'>
+                            <a href='https://github.com/BrandonP321' target='_blank' rel='noopener'>
                                 <i className='fab fa-github-alt'></i>
                             </a>
-                            <a href='https://stackoverflow.com/users/13790075/brandonp321' target='_blank'>
+                            <a href='https://stackoverflow.com/users/13790075/brandonp321' target='_blank' rel='noopener'>
                                 <i className='fab fa-stack-overflow'></i>
                             </a>
                         </div>

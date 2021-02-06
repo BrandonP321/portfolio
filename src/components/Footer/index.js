@@ -37,7 +37,7 @@ export default function Footer() {
                         <a href='/' className='white-text footer-site-link'>Home</a><br />
                         <a href='/#projects' className='white-text footer-site-link'>Projects</a><br />
                         <a href='/#skills' className='white-text footer-site-link'>Skills</a><br />
-                        <a href='./assets/pdf/Resume.pdf' target='_blank' className='white-text footer-site-link'>Resume</a><br />
+                        <a href='./assets/pdf/Resume.pdf' target='_blank' rel='noopener' className='white-text footer-site-link'>Resume</a><br />
                         <a href='/#contact' className='white-text footer-site-link'>Contact Me</a><br />
                     </div>
                     <div className='footer-column footer-contact-container'>
@@ -52,6 +52,7 @@ export default function Footer() {
                         <a 
                             href={social.url} 
                             target={social.title !== 'Mail' ? '_blank' : ''} 
+                            rel={social.title !== 'Mail' ? 'noopener' : ''}
                             className='social-circle' 
                             aria-label={social.title}
                         >

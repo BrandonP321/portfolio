@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Portfolio
+This is my professional portfolio where I feature some of the top projects I have worked on.  It features a pixel perfect fluid design for an exceptional user experience on any screen size.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Screenshots
+![Screenshot of portfolio site](./public/assets/images/social.webp)
 
-## Available Scripts
+![Screenshot of site on mobile device](https://i.imgur.com/b74WPRc.jpg)
 
-In the project directory, you can run:
+# Technologies Used
+## Front End
+- React.js
 
-### `npm start`
+## Back End
+- Node.js & Express
+- NoSQL with mongoose ORM
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Back End Server
+Click [here](https://github.com/BrandonP321/blog-cms-server) to visit the repository and README for the Node.js server.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Features
+- Mobile responsive design
+- Sing in form with autocomplete functionality
+- Full CRUD functionality over user's blog posts
+- Multiple options when creating blog post to customize post layout to user's specific needs
 
-### `npm test`
+# Installation
+Upon cloning the repo to your local machine, you just need to run `npm install` to install all dependencies 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Contributing
+Due to this being a small project for my portfolio I am not open to contributions at this time.
 
-### `npm run build`
+# Credits
+Lead Developer - Brandon Phillips
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# License
+The MIT License (MIT)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Copyright (c) 2021 Brandon Phillips
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-### `npm run eject`
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

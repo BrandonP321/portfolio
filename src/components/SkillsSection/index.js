@@ -47,10 +47,10 @@ export default function SkillsSection() {
                 </Carousel.Item>
                 <Carousel.Item interval={5000}>
                     <div className='skills-flex'>
-                        <div className='skill-container'>
+                        {/* <div className='skill-container'>
                             <JestLogo  className='skill-icon-svg'/>
                             <p className='skill-text'>jest</p>
-                        </div>
+                        </div> */}
                         <div className='skill-container'>
                             <SocketIOLogo className='skill-icon-svg' />
                             <p className='skill-text'>Socket.io</p>

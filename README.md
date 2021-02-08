@@ -19,13 +19,14 @@ This is my professional portfolio where I feature some of the top projects I hav
 - Nodemailer
 
 # Back End Server
-Click [here](https://github.com/BrandonP321/blog-cms-server) to visit the repository and README for the Node.js server.
+Click [here](https://github.com/BrandonP321/portfolio-server) to visit the repository and README for the Node.js server.
 
 # Features
 - Fluid responsive design
 - Contact form with reCAPTCHA form for preventing spam
 - High scores from chrom dev tools Lighthouse
 - All meta tags needed for optimal sharing of site on social media platforms
+- Shows up in third place of Google's search results when using the search query 'Brandon Phillips Full Stack Web Developer' after LinkedIn results.
 
 # Installation
 Upon cloning the repo to your local machine, you just need to run `npm install` to install all dependencies 

@@ -73,7 +73,7 @@ export default function Header() {
                         <a href='./assets/pdf/Resume.pdf' target='_blank' rel='noopener' className='white-text nav-link'>Resume</a><br />
                         <a className='white-text nav-link' onClick={() => handleNavItemClick('#contact')}>Contact</a><br />
                         <div className='mobile-social-icons'>
-                            <a href='https://www.linkedin.com/in/brandon-phillips-2554801a1/' target='_blank' rel='noopener'>
+                            <a href='https://www.linkedin.com/in/brandon-phillips-dev' target='_blank' rel='noopener'>
                                 <i className='fab fa-linkedin'></i>
                             </a>
                             <a href='https://github.com/BrandonP321' target='_blank' rel='noopener'>

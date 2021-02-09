@@ -6,7 +6,7 @@ export default function Footer() {
         {
             title: 'LinkedIn',
             icon_html: <i class="fab fa-linkedin-in social-icon"></i>,
-            url: 'https://www.linkedin.com/in/brandon-phillips-2554801a1/'
+            url: 'https://www.linkedin.com/in/brandon-phillips-dev'
         },
         {
             title: 'Github',

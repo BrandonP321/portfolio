@@ -1,3 +1,10 @@
+/* @font-face {
+    font-family: "Gilroy Regular";
+    src: url(./static/assets/fonts/Gilroy-Regular/font.woff);
+    src: url(./static/assets/fonts/Gilroy-Regular/font.woff2);
+    font-display: swap;
+} */
+
 html {
     scroll-behavior: smooth;
 }

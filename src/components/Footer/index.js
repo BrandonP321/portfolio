@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './index.css'
 
 export default function Footer() {
-    const [socials, setSocials] = useState([
+    const socials = [
         {
             title: 'LinkedIn',
             icon_html: <i class="fab fa-linkedin-in social-icon"></i>,
@@ -23,7 +23,7 @@ export default function Footer() {
             icon_html: <i class="fas fa-envelope social-icon"></i>,
             url: '#contact'
         },
-    ])
+    ]
 
     return (
         <footer>

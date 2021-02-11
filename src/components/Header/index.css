@@ -66,6 +66,8 @@ header .mobile-social-icons i {
 .nav-link {
     font-size: 18px;
     display: inline-block;
+    background-color: transparent;
+    border: none;
     transition: all .2s;
 }
 

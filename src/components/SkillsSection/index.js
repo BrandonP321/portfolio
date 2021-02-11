@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Carousel } from 'react-bootstrap'
 import IllustratorLogo from '../logos/IllustratorLogo'
 import PhotoshopLogo from '../logos/PhotoshopLogo'
-import JestLogo from '../logos/JestLogo'
+// import JestLogo from '../logos/JestLogo'
 import SocketIOLogo from '../logos/SocketIOLogo'
 import './index.css'
 

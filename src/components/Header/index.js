@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react'
-import { Router, Link } from 'react-router-dom'
 import './index.css'
 
 export default function Header() {
@@ -67,19 +66,19 @@ export default function Header() {
                     {/* based on whether or not mobile menu is showing, update nav class */}
                     <nav className={showMobileMenu ? 'header-nav nav-show' : 'header-nav'}>
                         <p className='mobile-nav-exit' onClick={handleMenuIconClick}>&times;</p>
-                        <a className='white-text nav-link' onClick={() => handleNavItemClick('#')}>Home</a><br />
-                        <a className='white-text nav-link' onClick={() => handleNavItemClick('#projects')}>Projects</a><br />
-                        <a className='white-text nav-link' onClick={() => handleNavItemClick('#skills')}>Skills</a><br />
-                        <a href='./assets/pdf/Resume.pdf' target='_blank' rel='noopener' className='white-text nav-link'>Resume</a><br />
-                        <a className='white-text nav-link' onClick={() => handleNavItemClick('#contact')}>Contact</a><br />
+                        <button className='white-text nav-link' onClick={() => handleNavItemClick('#')}>Home</button><br />
+                        <button className='white-text nav-link' onClick={() => handleNavItemClick('#projects')}>Projects</button><br />
+                        <button className='white-text nav-link' onClick={() => handleNavItemClick('#skills')}>Skills</button><br />
+                        <button href='./assets/pdf/Resume.pdf' target='_blank' rel='noreferrer' className='white-text nav-link'>Resume</button><br />
+                        <button className='white-text nav-link' onClick={() => handleNavItemClick('#contact')}>Contact</button><br />
                         <div className='mobile-social-icons'>
-                            <a href='https://www.linkedin.com/in/brandon-phillips-dev' target='_blank' rel='noopener'>
+                            <a href='https://www.linkedin.com/in/brandon-phillips-dev' target='_blank' rel='noreferrer' aria-label='LinkedIn'>
                                 <i className='fab fa-linkedin'></i>
                             </a>
-                            <a href='https://github.com/BrandonP321' target='_blank' rel='noopener'>
+                            <a href='https://github.com/BrandonP321' target='_blank' rel='noreferrer' aria-label='GitHub'>
                                 <i className='fab fa-github-alt'></i>
                             </a>
-                            <a href='https://stackoverflow.com/users/13790075/brandonp321' target='_blank' rel='noopener'>
+                            <a href='https://stackoverflow.com/users/13790075/brandonp321' target='_blank' rel='noreferrer' aria-label='Stack Overflow'>
                                 <i className='fab fa-stack-overflow'></i>
                             </a>
                         </div>

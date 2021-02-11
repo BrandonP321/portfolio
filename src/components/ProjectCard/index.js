@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react'
-import Measure from 'react-measure'
 import './index.css'
 
 const briefDivStyles = {
@@ -126,12 +125,12 @@ export default function ProjectCard(props) {
                             className={`project-btn red-bg white-text view-site${isFocusedOnBtns ? ' show' : ''}`}
                             ref={viewSiteBtn}
                             href={props.projectInfo.site_url}
-                            target='_blank' rel='noopener'>View Site</a>
+                            target='_blank' rel='noreferrer'>View Site</a>
                         <a
                             className={`project-btn red-bg white-text git-link${isFocusedOnBtns ? ' show' : ''}`}
                             ref={gitLinkBtn}
                             href={props.projectInfo.github_repo_url}
-                            target='_blank' rel='noopener'>GitHub Repo</a>
+                            target='_blank' rel='noreferrer'>GitHub Repo</a>
                     </div>
                 </div>
             </div>

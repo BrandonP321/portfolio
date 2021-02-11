@@ -97,6 +97,8 @@ a.project-btn:hover {
 
 .project-img-container img {
     border-radius: 5px;
+    width: 100%;
+    height: auto;
 }
 
 .project-img-container img:hover {

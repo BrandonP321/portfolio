@@ -7,7 +7,7 @@ This is my professional portfolio where I feature some of the top projects I hav
 ![Screenshot of site on mobile device](https://i.imgur.com/q6kVSg5.jpg)
 
 # Ligthouse Ratings
-![Screenshot of Lighthouse scores for site](https://i.imgur.com/8oTn1XD.jpg)
+![Screenshot of Lighthouse scores for site](https://i.imgur.com/N8CNMl4.jpg)
 
 # Technologies Used
 ## Front End

@@ -9,7 +9,7 @@ import VerticalNav from './components/VerticalNav'
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename='/portfolio'>
       <Header />
       <VerticalNav />
         <Switch>

@@ -6,8 +6,7 @@ export default function Hero() {
         <div className='home-hero-wrapper'>
             <div className='hero-img-wrapper'>
                 <img className='hero-img' srcSet='https://res.cloudinary.com/dka83rgpq/image/upload/v1613037815/portfolio/hero/hero-large_jsdlo1.png 1920w,
-                    https://res.cloudinary.com/dka83rgpq/image/upload/v1613037815/portfolio/hero/hero-medium_yuxrqu.png 1422w,
-                    https://res.cloudinary.com/dka83rgpq/image/upload/v1613037814/portfolio/hero/hero-small_wmnmr3.png 890w' alt='placeholder hero img' loading='lazy'/>
+                    https://res.cloudinary.com/dka83rgpq/image/upload/v1613037815/portfolio/hero/hero-medium_yuxrqu.png 1422w' alt='placeholder hero img' loading='lazy'/>
             </div>
             <div className='hero-text-outer-wrapper'>
                 <div className='hero-text-container'>
